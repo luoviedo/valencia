@@ -1,0 +1,16 @@
+.nav-pills {
+  padding-left: 34px;
+  padding-top: 18px;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.nav-pills .nav-link.active {
+  border-radius: 3px 3px 0 0;
+  background-color: #929191;
+  font-size: 13px;
+  padding: 4px 15px 4px 15px;
+}
+
+.nav-link {
+  padding: unset;
+}
