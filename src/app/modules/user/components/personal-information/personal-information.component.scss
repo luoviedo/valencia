@@ -1,0 +1,45 @@
+div {
+  padding: 15px 40px 0 15px;
+
+  > .d-flex {
+    justify-content: space-between;
+    border-bottom: 1px solid #cfcfcf;
+
+    .label-izq {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333333;
+      opacity: 1;
+    }
+
+    .label-der {
+      font-size: 11px;
+      color: #6e6e6e;
+    }
+  }
+
+  > .fila1 {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 13px;
+    font-weight: bold;
+    height: 33px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    opacity: 1;
+  }
+}
+
+.label-negrita {
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+.label-result {
+  font-size: 14px;
+}

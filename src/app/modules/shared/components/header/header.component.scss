@@ -1,37 +1,43 @@
-
-$primary-color: #333333;
+$primary-color: #a91f34;
 
 .bg-body-tertiary {
-    color: white;
-    background-color: $primary-color !important;
+  color: white;
+  background-color: $primary-color!important;
+  opacity: 1;
 }
 
 .nav-item {
-    border-left: 1px solid gray;
-    padding: 0px 18px 0px 18px;
-    >.title {
-        font-size: 15px;
-        font-weight: 500;
-    }
-    >.subtitle {
-        font-size: 12px;
-    }
+  border-left: 1px solid gray;
+  padding: 0px 18px 0px 18px;
+  > .title {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  > .subtitle {
+    font-size: 12px;
+    opacity: 0.88;
+  }
 }
 
 img {
-    padding: 0px 18px 0px 12px;
+  padding: 0px 18px 0px 12px;
 }
 
 div {
-    >.name {
-        border-right: 1px solid gray;
-        padding: 0px 18px 0px 18px;
-    }
-    >.subtitle-name {
-        font-size: 12px;
-    }
-    >i {
-        padding: 0px 10px 0px 18px;
-        align-self: center;
-    }
+  > .name {
+    border-right: 1px solid gray;
+    padding: 0px 18px 0px 18px;
+  }
+  > .subtitle-name {
+    font-size: 13px;
+    opacity: 1;
+  }
+  > .subtitle-name-rol {
+    font-size: 12px;
+    opacity: 0.88;
+  }
+  > i {
+    padding: 0px 10px 0px 18px;
+    align-self: center;
+  }
 }
