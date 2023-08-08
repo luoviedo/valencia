@@ -1,6 +1,5 @@
 .contenedor {
   box-shadow: 0px 3px 6px #00000029;
-  opacity: 1;
 
   > .contenedor-info {
     margin: 15px;
@@ -13,7 +12,6 @@
     div {
       letter-spacing: 0px;
       color: #333333;
-      opacity: 1;
       >.contenedor-info-name {
         font-size: 16px;
         font-weight: bold;

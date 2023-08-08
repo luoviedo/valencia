@@ -3,12 +3,12 @@ $primary-color: #a91f34;
 .bg-body-tertiary {
   color: white;
   background-color: $primary-color!important;
-  opacity: 1;
 }
 
 .nav-item {
-  border-left: 1px solid gray;
+  border-left: 1px solid #FFFFFF;
   padding: 0px 18px 0px 18px;
+  //opacity: 0.35;
   > .title {
     font-size: 15px;
     font-weight: 500;
@@ -30,7 +30,7 @@ div {
   }
   > .subtitle-name {
     font-size: 13px;
-    opacity: 1;
+    font-weight: 500;
   }
   > .subtitle-name-rol {
     font-size: 12px;
