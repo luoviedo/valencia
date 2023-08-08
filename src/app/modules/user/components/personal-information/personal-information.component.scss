@@ -35,20 +35,39 @@ div {
 .label-negrita {
   font-size: 12px;
   font-weight: bold;
-  
 }
 
 .label-result {
   font-size: 14px;
 }
 
-thead{
+thead {
   //background-color: #d11e1e !important;
   //border: 1px solid #707070;
-  //opacity: 0.08; 
+  //opacity: 0.08;
 }
 
-.table-secondary{
+.table-secondary {
   //border: 1px solid #707070;
-  //opacity: 0.08; 
+  //opacity: 0.08;
+}
+
+.estado-abierto {
+  font-size: 13px;
+  font-weight: bold;
+  color: #2D8533;
+  text-align: center;
+  width: 78px;
+  background: #e1f9e9 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+}
+
+.estado-cerrado {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  width: 78px;
+  background: #F1F0F0 0% 0% no-repeat padding-box;
+  border-radius: 20px;
 }
