@@ -1,5 +1,5 @@
 <!--Datos de contacto-->
-<div>
+<div class="contenedor">
     <div class="d-flex">
         <label class="label-izq" for="">Datos de contacto</label>
         <label class="label-der"> <em>Última actualización SIP: 12/03/2023 7:30</em></label>
@@ -18,7 +18,7 @@
             <label class="label-negrita" for="">Teléfono fijo</label>
             <label class="label-result" for="">95 236 22 22</label>
         </div>
-        <div class="col-sm-2">
+        <div class="col-sm-2 text-end">
             <button>Editar desde SIP</button>
         </div>
     </div>
@@ -45,7 +45,7 @@
 </div>
 
 <!--Datos sociales-->
-<div>
+<div class="contenedor">
     <div class="d-flex">
         <label class="label-izq" for="">Datos sociales</label>
     </div>
@@ -58,15 +58,11 @@
             <label class="label-negrita" for="">Profesional de refencia</label>
             <label class="label-result" for="">Juan Jaime Perales Ruíz</label>
         </div>
-        <div class="col-sm-3 align-column">
-        </div>
-        <div class="col-sm-2">
-        </div>
     </div>
 </div>
 
 <!--Datos sanitarios-->
-<div>
+<div class="contenedor">
     <div class="d-flex">
         <label class="label-izq" for="">Datos sanitarios</label>
     </div>
@@ -76,7 +72,7 @@
             <label class="label-result" for="">925687458002 - Titular</label>
         </div>
         <div class="col-sm-2 align-column">
-            <label class="label-negrita" for="">Centro asignado</label>
+            <label class="label-negrita" for="">Centro asignado <i class="fa-solid fa-circle-info"></i></label>
             <label class="label-result" for="">CAP de Buñol</label>
         </div>
         <div class="col-sm-3 align-column">
@@ -87,40 +83,41 @@
             <label class="label-negrita" for="">Teléfono del centro de salud</label>
             <label class="label-result" for="">6156 002 001</label>
         </div>
-        <div class="col-sm-2">
-        </div>
     </div>
 </div>
 
 <!--Unidad de convivencia-->
-<div>
+<div class="contenedor">
     <div class="d-flex">
         <label class="label-izq" for="">Unidad de convivencia</label>
     </div>
-    <div class="fila1 row">
-        <table class="table">
+    <div class="fila1 row spacing-table">
+        <table class="table align-middle">
             <thead class="table-secondary">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">SIP</th>
-                <th scope="col">Nombre y apellidos</th>
-                <th scope="col">Vínculo</th>
-                <th scope="col">Teléfono</th>
-                <th scope="col">PPIS</th>
-                <th scope="col"></th>
-                <th scope="col"></th>
+                <th width="5%">#</th>
+                <th width="10%">SIP</th>
+                <th width="15%">Nombre y apellidos</th>
+                <th width="15%">Vínculo</th>
+                <th width="10%">Teléfono</th>
+                <th width="5%">PPIS</th>
+                <th width="15%"></th>
+                <th width="2%"></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>123456</td>
+                <td >123456</td>
                 <td>Lourdes Fernández</td>
                 <td>Mujer</td>
                 <td>616003002</td>
-                <td class="estado-abierto">Abierto</td>
+                <td>
+                    <span class="estados estado-abierto">
+                        Abierto
+                    </span></td>
                 <td><em>F. Última actualización 15/03/2023</em></td>
-                <td></td>
+                <td><i class="fa-solid fa-file-lines"></i></td>
               </tr>
               <tr>
                 <th scope="row">2</th>
@@ -128,9 +125,11 @@
                 <td>Rocío García</td>
                 <td>Conviviente</td>
                 <td>616003003</td>
-                <td class="estado-cerrado">Cerrado</td>
+                <td>
+                    <span  class="estados estado-cerrado">Cerrado</span>
+                </td>
                 <td><em>F. Fin 15/03/2023</em></td>
-                <td></td>
+                <td><i class="fa-solid fa-file-lines"></i></td>
               </tr>
             </tbody>
           </table>

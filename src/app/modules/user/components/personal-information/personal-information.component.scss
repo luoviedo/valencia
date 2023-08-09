@@ -1,5 +1,5 @@
-div {
-  padding: 15px 40px 0 15px;
+.contenedor {
+  padding: 15px 40px 0 29px;
 
   > .d-flex {
     justify-content: space-between;
@@ -20,12 +20,16 @@ div {
   > .fila1 {
     padding-top: 10px;
     font-size: 12px;
+    &.spacing-table {
+      padding: 15px 11px 0 14px;
+    }
   }
 
   button {
     font-size: 13px;
     font-weight: bold;
     height: 33px;
+    width: 118px;
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #000000;
     border-radius: 2px;
@@ -41,33 +45,42 @@ div {
   font-size: 14px;
 }
 
-thead {
-  //background-color: #d11e1e !important;
-  //border: 1px solid #707070;
-  //opacity: 0.08;
-}
-
 .table-secondary {
-  //border: 1px solid #707070;
-  //opacity: 0.08;
+  --bs-table-bg: #ebebeb;
+  border-color: #ebebeb;
 }
 
-.estado-abierto {
+.estados {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 13px;
   font-weight: bold;
-  color: #2D8533;
   text-align: center;
   width: 78px;
-  background: #e1f9e9 0% 0% no-repeat padding-box;
+  height: 33px;
   border-radius: 20px;
+  &.estado-abierto {
+    color: #2d8533;
+    background: #e1f9e9 0% 0% no-repeat padding-box;
+  }
+  &.estado-cerrado {
+    color: #000000;
+    background: #f1f0f0 0% 0% no-repeat padding-box;
+  }
 }
 
-.estado-cerrado {
+table > :not(caption) > * > * {
+  padding: 0.3rem 0.5rem;
+}
+
+tbody tr {
   font-size: 13px;
-  font-weight: bold;
-  color: #000000;
-  text-align: center;
-  width: 78px;
-  background: #F1F0F0 0% 0% no-repeat padding-box;
-  border-radius: 20px;
+  > td em {
+    font-size: 12px;
+  }
+}
+
+.fa-circle-info {
+  color: #5ec6f3;
 }
