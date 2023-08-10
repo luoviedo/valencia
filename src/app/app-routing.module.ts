@@ -5,7 +5,7 @@ const routes: Routes = [
       {
         path: 'user',
         loadChildren: () => import('../app/modules/user/user.module').then(m => m.UserModule)
-      }
+      },
     ]
 
 @NgModule({

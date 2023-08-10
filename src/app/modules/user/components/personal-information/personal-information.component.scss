@@ -1,3 +1,5 @@
+$primary-color: #a91f34;
+
 .contenedor {
   padding: 15px 40px 0 29px;
 
@@ -8,12 +10,12 @@
     .label-izq {
       font-size: 15px;
       font-weight: bold;
-      color: #333333;
+      color: #565353;
     }
 
     .label-der {
       font-size: 11px;
-      color: #6e6e6e;
+      color: #777777;
     }
   }
 
@@ -24,25 +26,22 @@
       padding: 15px 11px 0 14px;
     }
   }
-
-  button {
-    font-size: 13px;
-    font-weight: bold;
-    height: 33px;
-    width: 118px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #000000;
-    border-radius: 2px;
-  }
 }
 
 .label-negrita {
   font-size: 12px;
   font-weight: bold;
+  color: #212529;
 }
 
 .label-result {
   font-size: 14px;
+  color: #333333;
+}
+
+.label-unid-conv {
+  display: flex;
+  align-items: flex-end;
 }
 
 .table-secondary {
@@ -70,17 +69,92 @@
   }
 }
 
+button {
+  font-size: 12px;
+  font-weight: bold;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #565353;
+  border-radius: 2px;
+}
+
+button:hover {
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
+.btn-editar-sip {
+  height: 33px;
+  width: 136px;
+}
+
+.btn-unidad-conv {
+  height: 30px;
+  width: 174px;
+  margin-bottom: 10px;
+}
+
 table > :not(caption) > * > * {
   padding: 0.3rem 0.5rem;
 }
 
+thead tr {
+  color: #333333;
+}
+
 tbody tr {
   font-size: 13px;
+  color: #333333;
   > td em {
     font-size: 12px;
   }
 }
 
+.table-anadir {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.btn-anadir {
+  padding: 1px 0px;
+  width: 90px;
+  height: 30px;
+}
+
+.form-select {
+  border: 1px solid #ccc9c9;
+  border-radius: 3px;
+  font-size: 13px;
+  width: 172px;
+  height: 30px;
+}
+
 .fa-circle-info {
   color: #5ec6f3;
+}
+
+.fa-pen {
+  color: #565353;
+  padding-right: 5px;
+}
+
+.fa-clock-rotate-left {
+  color: #565353;
+  padding-right: 5px;
+}
+
+.fa-plus {
+  color: #565353;
+  padding-right: 5px;
+}
+
+.form-check-input {
+  border: 1px solid #707070;
+  border-radius: 2px;
+  opacity: 0.78;
+}
+
+.form-check-input:checked {
+  background-color: #565353;
+  border-color: #565353;
 }

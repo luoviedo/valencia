@@ -1,5 +1,7 @@
 <!--Datos de contacto-->
+
 <div class="contenedor">
+    
     <div class="d-flex">
         <label class="label-izq" for="">Datos de contacto</label>
         <label class="label-der"> <em>Última actualización SIP: 12/03/2023 7:30</em></label>
@@ -19,7 +21,7 @@
             <label class="label-result" for="">95 236 22 22</label>
         </div>
         <div class="col-sm-2 text-end">
-            <button>Editar desde SIP</button>
+            <button class="btn-editar-sip"><i class="fa-solid fa-pen"></i>Editar desde SIP</button>
         </div>
     </div>
     <div class="row">
@@ -72,7 +74,7 @@
             <label class="label-result" for="">925687458002 - Titular</label>
         </div>
         <div class="col-sm-2 align-column">
-            <label class="label-negrita" for="">Centro asignado <i class="fa-solid fa-circle-info"></i></label>
+            <label class="label-negrita" for="">Centro asignado <i class="fa-solid fa-circle-info" ></i></label>
             <label class="label-result" for="">CAP de Buñol</label>
         </div>
         <div class="col-sm-3 align-column">
@@ -89,13 +91,14 @@
 <!--Unidad de convivencia-->
 <div class="contenedor">
     <div class="d-flex">
-        <label class="label-izq" for="">Unidad de convivencia</label>
+        <label class="label-izq label-unid-conv" for="">Unidad de convivencia</label>
+        <button class="btn-unidad-conv"><i class="fa-solid fa-clock-rotate-left"></i>H° Unidad convivencia</button>
     </div>
     <div class="fila1 row spacing-table">
         <table class="table align-middle">
             <thead class="table-secondary">
               <tr>
-                <th width="5%">#</th>
+                <th width="5%"></th>
                 <th width="10%">SIP</th>
                 <th width="15%">Nombre y apellidos</th>
                 <th width="15%">Vínculo</th>
@@ -107,10 +110,16 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
                 <td >123456</td>
                 <td>Lourdes Fernández</td>
-                <td>Mujer</td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Mujer</option>
+                        <option value="1">Conviviente</option>
+                        <option value="2">Madre</option>
+                      </select>
+                </td>
                 <td>616003002</td>
                 <td>
                     <span class="estados estado-abierto">
@@ -120,16 +129,81 @@
                 <td><i class="fa-solid fa-file-lines"></i></td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
                 <td>123457</td>
                 <td>Rocío García</td>
-                <td>Conviviente</td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option >Mujer</option>
+                        <option selected value="1">Conviviente</option>
+                        <option value="2">Madre</option>
+                      </select>
+                </td>
                 <td>616003003</td>
                 <td>
                     <span  class="estados estado-cerrado">Cerrado</span>
                 </td>
                 <td><em>F. Fin 15/03/2023</em></td>
                 <td><i class="fa-solid fa-file-lines"></i></td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </div>
+    <div class="row table-anadir">
+        <button class="btn-anadir"><i class="fa-solid fa-plus"></i>Añadir</button>
+    </div>
+</div>
+
+<!--Personas Relacionadas-->
+<div class="contenedor">
+    <div class="d-flex">
+        <label class="label-izq" for="">Personas Relacionadas</label>
+    </div>
+    <div class="fila1 row spacing-table">
+        <table class="table align-middle">
+            <thead class="table-secondary">
+              <tr>
+                <th width="5%"></th>
+                <th width="10%">SIP</th>
+                <th width="15%">Nombre y apellidos</th>
+                <th width="15%">Vínculo</th>
+                <th width="10%">Teléfono</th>
+                <th width="15%"></th>
+                <th width="2%"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                <td >123456</td>
+                <td>Lourdes Fernández</td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Mujer</option>
+                        <option value="1">Conviviente</option>
+                        <option value="2">Madre</option>
+                      </select>
+                </td>
+                <td>616003002</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                <td>123457</td>
+                <td>Rocío García</td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option >Mujer</option>
+                        <option selected value="1">Conviviente</option>
+                        <option value="2">Madre</option>
+                      </select>
+                </td>
+                <td>616003003</td>
+                <td></td>
+                <td></td>
+                
               </tr>
             </tbody>
           </table>
