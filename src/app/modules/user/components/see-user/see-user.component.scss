@@ -1,4 +1,7 @@
 .contenedor {
+  height: 87px;
+  /* UI Properties */
+  background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
 
   > .contenedor-info {
@@ -12,7 +15,7 @@
     div {
       letter-spacing: 0px;
       color: #333333;
-      >.contenedor-info-name {
+      > .contenedor-info-name {
         font-size: 16px;
         font-weight: bold;
         padding: 0 12px;
@@ -55,7 +58,7 @@
   border-radius: 3px 3px 0px 0px;
   opacity: 0.8;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 4px 15px 4px 15px;
 }
 
