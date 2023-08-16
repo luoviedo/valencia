@@ -1,11 +1,7 @@
-<div class="contenedor row">
-        <div class="row search">
-            <div class="col-sm-3 div-search">
-                <input type="text" class="form-control">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="col-sm-2">
-                <button class="btn-search-sip"><label>Buscar por otros criterios</label></button>
-            </div>
-        </div>
+<div class="contenedor d-flex align-items-center">
+    <div style="position: relative;" class="search">
+        <input type="text" style="margin-right: 60px; outline:none;">
+        <i (click)="onSearch()" class="fa-solid fa-magnifying-glass" style="position: absolute; top: 0; left: 334px; cursor: pointer;"></i>
+        <button class="btn-search-sip">Buscar por otros criterios</button>
+    </div>
 </div>
