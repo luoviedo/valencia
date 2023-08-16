@@ -1,12 +1,12 @@
-$primary-color: #A91F34;
+$primary-color: #a91f34;
 
 .bg-body-tertiary {
   color: white;
-  background-color: $primary-color!important;
+  background-color: $primary-color !important;
 }
 
 .nav-item {
-  border-left: 1px solid #FFFFFF;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
   padding: 0px 18px 0px 18px;
   //opacity: 0.35;
   > .title {
@@ -25,7 +25,7 @@ img {
 
 div {
   > .name {
-    border-right: 1px solid #FFFFFF;
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
     padding: 0px 18px 0px 18px;
   }
   > .subtitle-name {
@@ -39,5 +39,16 @@ div {
   > i {
     padding: 0px 10px 0px 18px;
     align-self: center;
+  }
+
+  .div-idioma {
+    align-items: center;
+    color: #ffffff;
+    opacity: 0.88;
+    font-size: 11px;
+    padding-left: 23px;
+    >label{
+      cursor: pointer;
+    }
   }
 }

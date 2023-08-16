@@ -10,6 +10,7 @@ $primary-color: #a91f34;
 
 .search {
   padding-left: 43px;
+  position: relative;
 }
 
 input {
@@ -18,6 +19,9 @@ input {
   border: 1px solid #ccc9c9;
   border-radius: 3px;
   margin: 0 0 0 10px;
+
+  margin-right: 60px;
+  outline: none;
 }
 
 i {
@@ -30,6 +34,11 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 334px;
+  cursor: pointer;
 }
 
 .btn-search-sip {

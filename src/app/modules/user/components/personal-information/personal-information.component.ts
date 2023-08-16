@@ -1,33 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ArqBasicComponent, ArqSchemaService } from 'arq-sdk';
+import { TranslocoService,TranslocoModule  } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-personal-information',
   templateUrl: './personal-information.component.html',
   styleUrls: ['./personal-information.component.scss'],
 })
-export class PersonalInformationComponent
-  extends ArqBasicComponent
-  implements OnInit
-{
-  public name: string = 'hola';
-  public formGroup2!: FormGroup;
+export class PersonalInformationComponent implements OnInit {
+  lang = this._translocoService.getActiveLang();
+  constructor(private _translocoService: TranslocoService) {}
 
-  constructor(
-    private fb: FormBuilder,
-    public override _schemaService: ArqSchemaService
-  ) {
-    super(_schemaService);
-    this.formGroup2 = this.fb.group({
-      provincia: ['', [Validators.required]],
-      municipio: [{ value: '', disabled: true }, [Validators.required]],
-      distrito: [
-        { value: '', disabled: true },
-        [Validators.required, Validators.maxLength(20)],
-      ],
+  ngOnInit(): void {
+    this._translocoService.langChanges$.subscribe((response) => {
+      this.lang = response;
     });
   }
 
-  override ngOnInit(): void {}
+  clickTranslate(language: string): void {
+    this._translocoService.setActiveLang(language);
+  }
 }
