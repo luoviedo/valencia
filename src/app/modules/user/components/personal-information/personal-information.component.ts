@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslocoService,TranslocoModule  } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-personal-information',
@@ -7,16 +6,7 @@ import { TranslocoService,TranslocoModule  } from '@ngneat/transloco';
   styleUrls: ['./personal-information.component.scss'],
 })
 export class PersonalInformationComponent implements OnInit {
-  lang = this._translocoService.getActiveLang();
-  constructor(private _translocoService: TranslocoService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this._translocoService.langChanges$.subscribe((response) => {
-      this.lang = response;
-    });
-  }
-
-  clickTranslate(language: string): void {
-    this._translocoService.setActiveLang(language);
-  }
+  ngOnInit(): void {}
 }

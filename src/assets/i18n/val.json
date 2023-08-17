@@ -1,3 +1,31 @@
 {
-    "datosContacto" : "Senyes de contacte"
+    "searchSip": "Buscar per altres criteris",
+    "tabs": {
+        "datosPersonales": "Dades personals"
+    },
+    "tabDatosContacto": {
+        "datosContacto": "Dades de contacte",
+        "fechaActualizacion":"Última actualització SIP",
+        "direccion": "Direcció",
+        "telefono": "Teléfon",
+        "telefonoMovilContacto": "Telèfon mòbil de contacte",
+        "telefonoFijo": "Teléfon fix",
+        "telefonoAlternativo": "Telèfon alternatiu",
+        "telefonoMovilExt": "Telèfon mòbil estranger",
+        "telefonoCentroSalud": "Telèfon del centre de salut",
+        "btnEditarSIP": "Editar des de SIP",
+        "datosSociales": "Dades socials",
+        "centroServicioSoc": "Centre servei socials",
+        "profesionalRef": "Professional de referència",
+        "datosSanitarios": "Dades sanitàries",
+        "nomApe": "Nom i cognoms",
+        "numSeguridadSoc": "N° seguretat social",
+        "centroAsignado": "Centre assignat",
+        "profesionalTrabajoSoc": "Professional de treball social",
+        "btnUnidadConvivencia":"H° Unitat convivència",
+        "unidadConvivencia": "Unitat de convivència",
+        "vinculo": "Vincle",
+        "anadir": "Afegir",
+        "personaRelacionadas": "Persones Relacionades"
+    }
 }

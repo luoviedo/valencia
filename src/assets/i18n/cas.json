@@ -1,3 +1,31 @@
 {
-    "datosContacto" : "Datos de contacto"
+    "searchSip": "Buscar por otros criterios",
+    "tabs": {
+        "datosPersonales": "Datos personales"
+    },
+    "tabDatosContacto": {
+        "datosContacto": "Datos de contacto",
+        "fechaActualizacion": "Última actualización SIP",
+        "direccion": "Dirección",
+        "telefono": "Teléfono",
+        "telefonoMovilContacto": "Teléfono móvil de contacto",
+        "telefonoFijo": "Teléfono fijo",
+        "telefonoAlternativo": "Teléfono alternativo",
+        "telefonoMovilExt": "Teléfono móvil extranjero",
+        "telefonoCentroSalud": "Teléfono del centro de salud",
+        "btnEditarSIP": "Editar desde SIP",
+        "datosSociales": "Datos sociales",
+        "centroServicioSoc": "Centro servicio sociales",
+        "profesionalRef": "Profesional de referencia",
+        "datosSanitarios": "Datos sanitarios",
+        "nomApe": "Nombre y apellidos",
+        "numSeguridadSoc": "N° seguridad social",
+        "centroAsignado": "Centro asignado",
+        "profesionalTrabajoSoc": "Profesional de trabajo social",
+        "btnUnidadConvivencia": "H° Unidad convivencia",
+        "unidadConvivencia": "Unidad de convivencia",
+        "vinculo": "Vínculo",
+        "anadir": "Añadir",
+        "personaRelacionadas": "Personas Relacionadas"
+    }
 }
