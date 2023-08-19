@@ -1,88 +1,157 @@
 <div>
-    <div style="padding: 10px 36px 0 36px;">
-        <label style="color: #333333; font-size: 11px;">DIAGNÓSTICO</label>
-        <p style="color: #333333; font-size: 13px;">PERSONA EN SITUACIÓN DE <strong>NECESIDAD GRAVE DE
-                AUTONOMÍA</strong> POR <strong>NEGLIGENCIA EN LOS CUIDADOS</strong> QUE SE DAN EN UN CONTEXTO VITAL DE
-            <strong>CARENCIA MODERADA POR PATOLOGÍAS MENTALES NO TRATADAS E INGRESOS INSUFICIENTES</strong></p>
+    <div style="padding: 10px 36px 0 36px">
+        <label style="color: #333333; font-size: 11px">DIAGNÓSTICO</label>
+        <p style="color: #333333; font-size: 13px">
+            PERSONA EN SITUACIÓN DE <strong>NECESIDAD GRAVE DE AUTONOMÍA</strong>
+            POR
+            <strong>NEGLIGENCIA EN LOS CUIDADOS</strong> QUE SE DAN EN UN
+            CONTEXTO
+            VITAL DE
+            <strong>CARENCIA MODERADA POR PATOLOGÍAS MENTALES NO TRATADAS E
+                INGRESOS
+                INSUFICIENTES</strong>
+        </p>
     </div>
-    <hr>
-    <div class="row" style="padding: 20px 36px 0 36px;">
+    <hr />
+    <div class="row" style="padding: 20px 36px 0 36px">
         <div class="col-5">
-            <div class="d-flex justify-content-between" style="">
-                <label>Necesidades</label>
-                <button>Añadir</button>
+            <div class="d-flex justify-content-between align-items-end"
+                style="border-bottom: 1px solid #cfcfcf">
+                <label class="label-title">Necesidades</label>
+                <button class="btn-anadir">
+                    <i class="fa-solid fa-plus"></i>{{ "tabDatosContacto.anadir"
+                    | transloco }}
+                </button>
             </div>
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            <span class="cuadrado-off"></span>
+                            <span style="padding-left: 10px;">11/01/2023 &nbsp;&nbsp; <strong>INCLUSIÓN SOCIAL</strong></span>
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    <div id="flush-collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.</div>
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class.
+                            This is the
+                            first item's accordion body.
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            <span class="cuadrado-on"></span>
+                            <span style="padding-left: 10px;">11/08/2023 &nbsp;&nbsp; <strong>INCLUSIÓN SOCIAL</strong></span>
                         </button>
                     </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    <div id="flush-collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class.
+                            This is the
+                            second item's accordion body. Let's imagine this
+                            being filled with
+                            some actual content.
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="card">
-                <h5 class="card-header">Featured</h5>
+                <label class="card-header"><i
+                        class="fa-regular fa-calendar"></i> Próximas citas</label>
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <span class="dot" style="
+                    background-color: #94ECF6;"></span>
+                    <label class="card-text">10/05/2023 &nbsp;&nbsp;&nbsp;<strong>SS Ciutat Vella
+                            - Agenda</strong></label><br>
+
+                    <span class="dot" style="
+                    background-color: #C522AA;"></span>
+                    <label class="card-text">25/05/2023 &nbsp;&nbsp;&nbsp;<strong>CAP Trinitat
+                            - Dr. José Barrios</strong></label><br>
+
+                    <span class="dot" style="
+                    background-color: #95E17A;"></span>
+                    <label class="card-text">13/07/2023 &nbsp;&nbsp;&nbsp;<strong>CAP Trinitat - Analíticas</strong></label><br>
                 </div>
-              </div>
+            </div>
         </div>
         <div class="col-7">
-            <div style="border-bottom: 1px solid #cfcfcf;">
-                <label >Historia Social</label>
+            <div style="border-bottom: 1px solid #cfcfcf">
+                <label class="label-title">Historia Social</label>
             </div>
-            
+
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOneH1"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            <span class="cuadrado-on"></span>
+                            <span style="padding-left: 10px;">11/01/2023 &nbsp;&nbsp; <strong>INCLUSIÓN SOCIAL</strong></span>
+                            <span class="estados estado-abierto">
+                                Abierto
+                            </span>
                         </button>
                     </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    <div id="flush-collapseOneH1"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                            body.</div>
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class.
+                            This is the
+                            first item's accordion body.
+                        </div>
                     </div>
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
+                        <button class="accordion-button collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwoH"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            <span class="cuadrado-on"></span>
+                            <span style="padding-left: 10px;">11/01/2023 &nbsp;&nbsp; <strong>INCLUSIÓN SOCIAL</strong></span>
                         </button>
                     </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    <div id="flush-collapseTwoH"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                            body. Let's imagine this being filled with some actual content.</div>
+                        <div class="accordion-body">
+                            Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class.
+                            This is the
+                            second item's accordion body. Let's imagine this
+                            being filled with
+                            some actual content.
+                        </div>
                     </div>
                 </div>
             </div>
