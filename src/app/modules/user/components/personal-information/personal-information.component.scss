@@ -82,7 +82,15 @@ button:hover {
   border: 1px solid $primary-color;
   color: $primary-color;
   border-radius: 3px;
+  i:hover {
+    color: $primary-color;
+  }
 }
+
+
+// .fa-pen:hover {
+//   color: red;
+// }
 
 .btn-editar-sip {
   height: 33px;
@@ -165,3 +173,4 @@ tbody tr {
   background-color: #565353;
   border-color: #565353;
 }
+

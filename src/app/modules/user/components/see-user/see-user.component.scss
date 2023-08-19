@@ -48,27 +48,29 @@
 }
 
 .nav-pills {
-  padding-left: 25px;
   padding-top: 18px;
   border-bottom: 1px solid #cfcfcf;
+  text-align: -webkit-center;
+  align-items: center;
 }
 
 .nav-pills .nav-link.active {
+  // width: 100%;
   background: #a91e34 0% 0% no-repeat padding-box;
   border-radius: 3px 3px 0px 0px;
   opacity: 0.8;
   font-size: 13px;
   color: #ffffff;
-  padding: 4px 15px 4px 15px;
+  padding: 4px 11px 4px 11px;
 }
 
 .nav-link {
   padding: unset;
-  padding-left: 20px;
   font-size: 13px;
   color: #565353;
+  font-weight: 500;
 }
 
-.nav-item{
-  padding-right: 20px;
-}
+// .nav-item {
+//   padding-right: 20px;
+// }
