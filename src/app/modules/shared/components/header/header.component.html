@@ -23,9 +23,9 @@
             <label class="subtitle-name-rol">Trabajadora Social</label>
           </div>
           <div class="div-idioma d-flex">
-            <label (click)="clickTranslate('val')" class="subtitle-name-rol">VAL</label>   
+            <label (click)="clickTranslate('val')" [ngClass]="{'active': lang === 'val'}" class="subtitle-name-rol">VAL</label>   
             <label class="subtitle-name-rol">&nbsp;/&nbsp;</label> 
-            <label (click)="clickTranslate('cas')" class="subtitle-name-rol">CAS</label>         
+            <label (click)="clickTranslate('cas')" [ngClass]="{'active': lang === 'cas'}" class="subtitle-name-rol">CAS</label>         
             
           </div>
           <i class="fa-solid fa-power-off"></i>

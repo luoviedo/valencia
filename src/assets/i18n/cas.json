@@ -1,7 +1,8 @@
 {
     "searchSip": "Buscar por otros criterios",
     "tabs": {
-        "datosPersonales": "Datos personales"
+        "datosPersonales": "Datos personales",
+        "historiaSocial":"Historia social"
     },
     "tabDatosContacto": {
         "datosContacto": "Datos de contacto",

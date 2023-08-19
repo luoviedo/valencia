@@ -49,6 +49,10 @@ div {
     padding-left: 23px;
     >label{
       cursor: pointer;
+      &.active {
+        text-decoration: underline;
+      }
     }
   }
 }
+

@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { SearchSipComponent } from './components/search-sip/search-sip.component';
 import { TranslocoModule } from '@ngneat/transloco';
+import { SocialHistoryComponent } from './components/social-history/social-history.component';
 
 
 
@@ -17,7 +18,8 @@ import { TranslocoModule } from '@ngneat/transloco';
     SeeUserComponent,
     PersonalInformationComponent,
     PpisComponent,
-    SearchSipComponent
+    SearchSipComponent,
+    SocialHistoryComponent
   ],
   imports: [
     CommonModule,

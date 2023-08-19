@@ -6,12 +6,12 @@ import { TranslocoService  } from '@ngneat/transloco';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit{
-  lang = this._translocoService.getActiveLang();
+  public lang = this._translocoService.getActiveLang();
   constructor(private _translocoService: TranslocoService) {}
 
   ngOnInit(): void {
     this._translocoService.langChanges$.subscribe((response) => {
-      this.lang = response;
+      this.lang = response;      
     });
   }
 
