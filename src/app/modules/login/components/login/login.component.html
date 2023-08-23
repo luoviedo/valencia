@@ -1,20 +1,21 @@
 <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <form onsubmit="event.preventDefault()" class="box">
-            <div>
-              <img src="../../../../../assets/icons/logo_login.png" alt="">
-              <h1>SIHSU</h1>
-              <input type="text" name="" placeholder="USUARIO">
-              <input type="password" name="" placeholder="CONTRASEÑA">
-              <input type="submit" name="" value="ACCEDER" href="#">
-              <div class="col-md-12">
-                <span class="copyright">&#169;&nbsp;Copyright 2023</span>
-              </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <form onsubmit="event.preventDefault()" class="box">
+          <div>
+            <img src="../../../../../assets/icons/logo_login.png" alt>
+            <h1>SIHSU</h1>
+            <input type="text" name placeholder="USUARIO">
+            <input type="password" name placeholder="CONTRASEÑA">
+            <!--<input type="submit" name="" value="ACCEDER" href="#"> -->
+            <button (click)="onLogin()">ACCEDER</button>
+            <div class="col-md-12">
+              <span class="copyright">&#169;&nbsp;Copyright 2023</span>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div>

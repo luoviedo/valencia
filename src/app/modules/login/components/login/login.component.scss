@@ -3,6 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
   background: #f6f6f6 0% 0% no-repeat padding-box;
+  
+}
+
+.izq{
+  background-image: url('../../../../../assets/icons/izquierda_superior.png');
+}
+
+.der{
+  background-image: url('../../../../../assets/icons/derecha_inferior.png');
 }
 
 .card {
@@ -54,10 +63,26 @@ body {
   .box input[type="password"]:focus {
     width: 300px;
     border-color: #CCC9C9
-  }*/
+  }
 
 .box input[type="submit"] {
   background: #a91f34 0% 0% no-repeat padding-box;
+  border-color: #a91f34;
+  border-radius: 2px;
+  width: 286px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px 10px;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+}
+*/
+.box button {
+  background: #a91f34 0% 0% no-repeat padding-box;
+  border-color: #a91f34;
   border-radius: 2px;
   width: 286px;
   display: block;
