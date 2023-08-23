@@ -10,6 +10,7 @@ import { ToastrService } from 'ngx-toastr';
 import { SearchSipComponent } from './components/search-sip/search-sip.component';
 import { TranslocoModule } from '@ngneat/transloco';
 import { SocialHistoryComponent } from './components/social-history/social-history.component';
+import { FirstDiagnosticLayerComponent } from './components/first-diagnostic-layer/first-diagnostic-layer.component';
 
 
 
@@ -19,7 +20,8 @@ import { SocialHistoryComponent } from './components/social-history/social-histo
     PersonalInformationComponent,
     PpisComponent,
     SearchSipComponent,
-    SocialHistoryComponent
+    SocialHistoryComponent,
+    FirstDiagnosticLayerComponent
   ],
   imports: [
     CommonModule,
