@@ -1,6 +1,12 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+
+html,
+body {
+  height: 100%;
+}
+
 .align-column {
   display: flex;
   flex-direction: column;
