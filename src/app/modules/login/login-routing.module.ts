@@ -5,7 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 const routes: Routes = [
   {
     path: 'login',
-    title: 'Inicio de sesión',
+    title: 'SIHSU Inicio de sesión',
     component: LoginComponent
   },
   { path: '', redirectTo: 'login', pathMatch: 'full' },

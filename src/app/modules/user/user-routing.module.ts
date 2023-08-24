@@ -7,12 +7,12 @@ import { FirstDiagnosticLayerComponent } from './components/first-diagnostic-lay
 const routes: Routes = [
   {
     path: 'see',
-    title: 'Ver',
+    title: 'SIHSU',
     component: SeeUserComponent
   },
   {
     path: 'search-sip',
-    title: 'Buscar SIP',
+    title: 'SIHSU Buscar SIP',
     component: SearchSipComponent
   },
   {
