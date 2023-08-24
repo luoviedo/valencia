@@ -10,6 +10,6 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   public onLogin() {
-    this.router.navigate(['/user/search-sip']);
+    this.router.navigate(['/home/user/search-sip']);
   }
 }

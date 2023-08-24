@@ -10,6 +10,6 @@ export class SearchSipComponent {
   constructor(private router: Router) {}
 
   public onSearch() {
-    this.router.navigate(['/user/see']);
+    this.router.navigate(['/home/user/see']);
   }
 }
