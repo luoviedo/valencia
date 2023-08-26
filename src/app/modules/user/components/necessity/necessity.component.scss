@@ -1,0 +1,60 @@
+$primary-color: #a91f34;
+
+.contenedor {
+  padding: 15px 40px 0 60px;
+}
+
+button {
+  font-size: 12px;
+  color: #565353;
+  font-weight: bold;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #565353;
+  border-radius: 2px;
+}
+
+button:hover {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  border-radius: 3px;
+  i:hover {
+    color: $primary-color;
+  }
+}
+
+.btn-anadir {
+  padding: 1px 0px;
+  width: 90px;
+  height: 30px;
+}
+
+.fa-plus {
+  padding-right: 5px;
+}
+
+.form-select {
+  border: 1px solid #ccc9c9;
+  border-radius: 3px;
+  font-size: 12px;
+  font-style: italic;
+  color: #666666;
+  margin-right: 20px;
+  width: 438px;
+  height: 30px;
+}
+
+.seccion {
+  margin-top: 30px;
+  background: #d3cdcd 0% 0% no-repeat padding-box;
+  > label {
+    color: #212529;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .list-group-item {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 13px;
+    color: #333333;
+  }
+}
