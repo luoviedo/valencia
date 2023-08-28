@@ -1,13 +1,13 @@
 <div class="contenedor row">
     <div class="contenedor-info col d-flex">
         <div class="contenedor-info-logo d-flex justify-content-around align-items-center">
-            <label>JF</label>
+            <label>{{iniciales}}</label>
             <!--<i class="fa-solid fa-house"></i>-->
         </div>
         <div>            
-            <label class="contenedor-info-name">{{result.iden.nomb}}(H, 02/08/1997)</label>
+            <label class="contenedor-info-name">{{result.iden?.nomb }} {{result.iden?.ape1}} {{result.iden?.ape2}} ({{result.iden?.sexo}}, {{result.iden?.fena}})</label>
             <div>
-                <label><strong>SIP </strong>123456789</label>
+                <label><strong>SIP </strong>{{result.iden?.nsip }}</label>
                 <label><strong>NIF</strong> 123456789</label>
                 <label>616 002 001 / 98 265 265</label>
                 <i class="fa-solid fa-house"></i>
@@ -28,7 +28,7 @@
     width: 139px;" class="nav-item" role="presentation">
       <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{"tabs.datosPersonales" | transloco}}</button>
     </li>
-    <li style="margin: 0 10px;
+    <!--<li style="margin: 0 10px;
     width: 130px;" class="nav-item" role="presentation">
         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Visor familiar</button>
       </li> 
@@ -38,7 +38,7 @@
       </li> 
      <li style="margin: 0 10px;" class="nav-item" role="presentation">
       <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">PPIS</button>
-    </li> 
+    </li> -->
   </ul>
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane show active" id="pills-social" role="tabpanel" aria-labelledby="pills-home-tab">
