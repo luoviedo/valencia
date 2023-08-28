@@ -11,6 +11,7 @@ import { SearchSipComponent } from './components/search-sip/search-sip.component
 import { TranslocoModule } from '@ngneat/transloco';
 import { SocialHistoryComponent } from './components/social-history/social-history.component';
 import { FirstDiagnosticLayerComponent } from './components/first-diagnostic-layer/first-diagnostic-layer.component';
+import { NecessityComponent } from './components/necessity/necessity.component';
 
 
 
@@ -21,7 +22,8 @@ import { FirstDiagnosticLayerComponent } from './components/first-diagnostic-lay
     PpisComponent,
     SearchSipComponent,
     SocialHistoryComponent,
-    FirstDiagnosticLayerComponent
+    FirstDiagnosticLayerComponent,
+    NecessityComponent
   ],
   imports: [
     CommonModule,

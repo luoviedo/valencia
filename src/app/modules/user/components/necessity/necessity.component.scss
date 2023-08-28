@@ -7,7 +7,7 @@ $primary-color: #a91f34;
 button {
   font-size: 12px;
   color: #565353;
-  font-weight: bold;
+  font-weight: 500;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #565353;
   border-radius: 2px;
@@ -56,5 +56,99 @@ button:hover {
     padding-bottom: 3px;
     font-size: 13px;
     color: #333333;
+  }
+}
+
+.seccion-fact {
+  margin-top: 30px;
+  //
+  //opacity: 0.3;
+  > label {
+    width: 100%;
+    color: #565353;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 3px;
+  }
+  > .row {
+    padding-top: 20px;
+
+    .form-check-input {
+      font-size: 12px;
+      border: 1px solid #707070;
+      border-radius: 2px;
+      opacity: 0.78;
+    }
+
+    .form-check-input:checked {
+      background-color: #565353;
+      border-color: #565353;
+    }
+
+    .form-check-label {
+      font-size: 13px;
+      color: #333333;
+    }
+  }
+}
+
+.seccion-radio {
+  margin-top: 30px;
+  //
+  //opacity: 0.3;
+  > label {
+    width: 100%;
+    color: #565353;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  .form-check-input {
+    font-size: 14px;
+  }
+
+  .form-check-input:checked {
+    background-color: #565353;
+    border-color: #565353;
+  }
+  .form-check-label {
+    font-size: 13px;
+    color: #333333;
+  }
+}
+
+.observaciones {
+  margin-top: 30px;
+  > label {
+    width: 100%;
+    color: #565353;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+}
+
+.botones-control {
+  margin-top: 50px;
+
+  .btn-guardar {
+    width: 85px;
+    height: 40px;
+    background: #565353 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  .btn-cancelar {
+    margin-left: 30px;
+    width: 92px;
+    height: 40px;
+    background: #FFFFFF  0% 0% no-repeat padding-box;
+    border: 1px solid #565353;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #565353;;
   }
 }

@@ -6,26 +6,148 @@
             <option value="2">Madre</option>
         </select>
 
-        <button class="btn-anadir"><i class="fa-solid fa-plus"></i>{{
-            "tabDatosContacto.anadir" | transloco }}</button>
+        <button class="btn-anadir">
+            <i class="fa-solid fa-plus"></i>{{ "tabDatosContacto.anadir" |
+            transloco }}
+        </button>
     </div>
 
+    <!--Demandas seleccionadas -->
     <div class="seccion">
         <label>Demandas seleccionadas</label>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">D1 - APOYO A SITUACIÓN DE DEPENDENCIA</li>
-            <li class="list-group-item">D.4.4 - MEDIACIÓN POR SITUACIÓN DE
-                CONVIVENCIA FAMILIAR ALTERADA</li>
+            <li class="list-group-item">
+                D.4.4 - MEDIACIÓN POR SITUACIÓN DE CONVIVENCIA FAMILIAR ALTERADA
+            </li>
             <li class="list-group-item"></li>
         </ul>
     </div>
 
+    <!--Necesidad seleccionadas -->
     <div class="seccion">
         <label>Necesidad seleccionada</label>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">N1 - NECESIDAD BÁSICA DE AUTONOMÍA
-                PERSONAL</li>
+            <li class="list-group-item">
+                N1 - NECESIDAD BÁSICA DE AUTONOMÍA PERSONAL
+            </li>
             <li class="list-group-item"></li>
         </ul>
+    </div>
+
+    <!--Factores -->
+    <div class="seccion-fact">
+        <label>Factores</label>
+        <div class="row">
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                        F1.1 - Ausencia / imposibilidad de competencias
+                        personales
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckChecked" checked />
+                    <label class="form-check-label" for="flexCheckChecked">
+                        F1.2 - Imposibilidad familiar de cuidados
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                        F1.3 - Ausencia / imposibilidad de competencias
+                        familiares
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckChecked" checked />
+                    <label class="form-check-label" for="flexCheckChecked">
+                        F1.4 - Desatención F1.5 - Soledad no deseada
+                    </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                        F1.5 - Soledad no deseada
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckChecked" checked />
+                    <label class="form-check-label" for="flexCheckChecked">
+                        F1.6 - Aislamiento
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                        F1.7 - Negligencia/maltrato/ abandono
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value id="flexCheckChecked" checked />
+                    <label class="form-check-label" for="flexCheckChecked">
+                        F1.8 - Desorganización vital
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Acuerdo persona usuaria -->
+    <div class="seccion-radio">
+        <label>Acuerdo persona usuaria</label>
+        <div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Criterio profesional de valoración diagnóstica -->
+    <div class="seccion-radio">
+        <label>Criterio profesional de valoración diagnóstica</label>
+        <div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                <label class="form-check-label" for="inlineRadio1">Si</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+            </div>
+        </div>
+    </div>
+
+    <!--Observaciones -->
+    <div class="observaciones">
+        <label>Observaciones</label>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+        </div>
+    </div>
+
+    <!--botones -->
+    <div class="botones-control d-flex justify-content-end">
+        <button class="btn-guardar">
+            Guardar
+        </button>
+
+        <button class="btn-cancelar">
+            Cancelar
+        </button>
     </div>
 </div>
