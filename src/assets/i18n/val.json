@@ -28,5 +28,12 @@
         "vinculo": "Vincle",
         "anadir": "Afegir",
         "personaRelacionadas": "Persones Relacionades"
+    },
+    "tabHistoriaSocial": {
+        "diagnostico": "DIAGNÒSTIC",
+        "necesidades": "Necessitats",
+        "historiaSocial": "Història social",
+        "proxCitas": "Pròximes cites",
+        "anadir": "Afegir"
     }
 }

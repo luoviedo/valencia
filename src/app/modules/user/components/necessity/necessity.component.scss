@@ -141,14 +141,27 @@ button:hover {
     color: #ffffff;
   }
 
+  .btn-guardar:hover {
+    background: $primary-color 0% 0% no-repeat padding-box;
+    border: 1px solid $primary-color;
+    border-radius: 2px;
+  }
+
   .btn-cancelar {
     margin-left: 30px;
     width: 92px;
     height: 40px;
-    background: #FFFFFF  0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #565353;
     border-radius: 2px;
     font-size: 15px;
-    color: #565353;;
+    color: #565353;
+  }
+
+  .btn-cancelar:hover {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    border-radius: 3px;
+    font-weight: 500;
   }
 }

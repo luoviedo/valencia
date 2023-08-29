@@ -1,6 +1,6 @@
 <div class="contenedor row">
     <div class="contenedor-info col d-flex">
-        <div class="contenedor-info-logo d-flex justify-content-around align-items-center">
+        <div class="d-flex justify-content-around align-items-center" [ngClass]="{'contenedor-info-logo-h': result.iden?.sexo === 'H','contenedor-info-logo-m': result.iden?.sexo === 'M' }">
             <label>{{iniciales}}</label>
             <!--<i class="fa-solid fa-house"></i>-->
         </div>

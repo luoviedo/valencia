@@ -8,7 +8,7 @@
     margin: 15px;
     padding-left: 34px;
 
-    > .contenedor-info-logo {
+    > .contenedor-info-logo-h {
       align-self: center;
       height: 60px;
       width: 60px;
@@ -16,6 +16,24 @@
       display: inline-block;
 
       background: rgb(13 110 253 / 32%) 0% 0% no-repeat padding-box;
+      //opacity: 0.15;
+      > label {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #333333;
+      }
+    }
+
+    > .contenedor-info-logo-m {
+      align-self: center;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      display: inline-block;
+
+      background: #c522aa3b 0% 0% no-repeat padding-box;
       //opacity: 0.15;
       > label {
         text-align: center;
@@ -36,6 +54,7 @@
       }
 
       div {
+        padding-left: 4px;
         label {
           padding: 0 8px;
           font-size: 13px;

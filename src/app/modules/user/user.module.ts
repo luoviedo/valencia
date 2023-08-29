@@ -12,6 +12,7 @@ import { TranslocoModule } from '@ngneat/transloco';
 import { SocialHistoryComponent } from './components/social-history/social-history.component';
 import { FirstDiagnosticLayerComponent } from './components/first-diagnostic-layer/first-diagnostic-layer.component';
 import { NecessityComponent } from './components/necessity/necessity.component';
+import { DataUserService } from './services/storage/data-user.service';
 
 
 
@@ -33,6 +34,6 @@ import { NecessityComponent } from './components/necessity/necessity.component';
     ReactiveFormsModule,
     TranslocoModule
   ],
-  providers: [ToastrService]
+  providers: [ToastrService,DataUserService]
 })
 export class UserModule { }
