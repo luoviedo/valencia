@@ -32,7 +32,7 @@ import { DataUserService } from './services/storage/data-user.service';
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    TranslocoModule
+    TranslocoModule,
   ],
   providers: [ToastrService,DataUserService]
 })
