@@ -7,5 +7,17 @@
         "fena": "1990-04-01",
         "sexo": "H",
         "fact": "2023-08-29"
+    },
+    "asig": {
+        "cen": {
+            "codi": "216",
+            "nomb": "CS VILAMARXANT"
+        },
+        "pro": {
+            "nif": "22559103J",
+            "noap": "FELICIDAD SANANTONIO VALDEARCOS",
+            "codi": "1",
+            "desc": "PDT"
+        }
     }
 }
