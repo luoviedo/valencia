@@ -2,7 +2,7 @@
     "searchSip": "Buscar por otros criterios",
     "tabs": {
         "datosPersonales": "Datos personales",
-        "historiaSocial":"Historia social"
+        "historiaSocial": "Historia social"
     },
     "tabDatosContacto": {
         "datosContacto": "Datos de contacto",
@@ -34,6 +34,14 @@
         "necesidades": "Necesidades",
         "historiaSocial": "Historia social",
         "proxCitas": "Próximas citas",
-        "anadir": "Añadir"
+        "anadir": "Añadir",
+        "necesidad": {
+            "demandaSel": "Demandas seleccionadas",
+            "necesidadSel": "Necesidad seleccionada",
+            "factores": "Factores",
+            "acuerdoPersona": "Acuerdo persona usuaria",
+            "criterioProf": "Criterio profesional de valoración diagnóstica",
+            "observaciones": "Observaciones"
+        }
     }
 }

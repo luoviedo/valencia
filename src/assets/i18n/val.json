@@ -34,6 +34,14 @@
         "necesidades": "Necessitats",
         "historiaSocial": "Història social",
         "proxCitas": "Pròximes cites",
-        "anadir": "Afegir"
+        "anadir": "Afegir",
+        "necesidad": {
+            "demandaSel": "Demandes seleccionades",
+            "necesidadSel": "Necessitat seleccionada",
+            "factores": "Factors",
+            "acuerdoPersona": "Acorde persona usuària",
+            "criterioProf": "Criteri professional de valoració diagnòstica",
+            "observaciones": "Observacions"
+        }
     }
 }

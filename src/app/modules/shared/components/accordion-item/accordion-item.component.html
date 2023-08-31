@@ -1,13 +1,17 @@
 <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-         [attr.data-bs-target]="'#'+idDiv" aria-expanded="false" aria-controls="flush-collapseOne">
+        <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            [attr.data-bs-target]="'#'+idDiv" aria-expanded="false"
+            aria-controls="flush-collapseOne">
             <span class="{{classButton}}"></span>
             <span class="span-acordeon-fecha">{{fecha}} &nbsp;&nbsp;</span><span
                 class="span-acordeon-titulo"><strong>{{titulo}}</strong></span>
+            <span *ngIf="isEstado" class="estados estado-abierto"> Abierto </span>
         </button>
     </h2>
-    <div id={{idDiv}} class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+    <div id={{idDiv}} class="accordion-collapse collapse"
+        aria-labelledby="flush-headingOne"
         data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
             {{descripcion}}

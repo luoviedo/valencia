@@ -11,4 +11,5 @@ export class AccordionItemComponent {
   @Input() descripcion!: string;
   @Input() idDiv!: string;
   @Input() classButton!: string;
+  @Input() isEstado!: boolean;
 }
