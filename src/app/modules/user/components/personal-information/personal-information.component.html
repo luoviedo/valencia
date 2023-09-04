@@ -9,8 +9,8 @@
     <div class="fila1 row">
         <div class="col-sm-4 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.direccion" | transloco }}</label>
-            <label class="label-result">C/ del Mar, 5 2B</label>
-            <label class="label-result">46999 Elda, Alicante</label>
+            <label class="label-result">{{personalData.loca?.dirRes?.cal?.calCod?.tiv}} {{personalData.loca?.dirRes?.cal?.calCod?.nomb}}, {{personalData.loca?.dirRes?.espe?.nume}}</label>
+            <label class="label-result">{{personalData.loca?.dirRes?.copo}} {{personalData.loca?.dirRes?.loc?.nomb}}, {{personalData.loca?.dirRes?.prv?.nomb}}</label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoMovilContacto" | transloco }}</label>
@@ -18,7 +18,7 @@
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoFijo" | transloco }}</label>
-            <label class="label-result">95 236 22 22</label>
+            <label class="label-result">{{personalData.loca?.tele}}</label>
         </div>
         <div class="col-sm-2 text-end">
             <button class="btn-editar-sip"><i class="fa-solid fa-pen"></i>{{ "tabDatosContacto.btnEditarSIP" | transloco }}</button>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoAlternativo" | transloco }}</label>
-            <label class="label-result">-</label>
+            <label class="label-result">{{personalData.loca?.teco}}</label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoMovilExt" | transloco }}</label>
@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col align-column">
             <label class="label-negrita">Email</label>
-            <label class="label-result">juangarcia@gmail.com</label>
+            <label class="label-result">{{personalData.loca?.correo}}</label>
         </div>
     </div>
 </div>
@@ -54,11 +54,11 @@
     <div class="fila1 row">
         <div class="col-sm-4 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.centroServicioSoc" | transloco }}</label>
-            <label class="label-result">{{personalData.asig?.cen?.nomb}}</label>
+            <label class="label-result">CSS de Buñol</label>
         </div>
         <div class="col-sm-4 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.profesionalRef" | transloco }}</label>
-            <label class="label-result">{{personalData.asig?.pro?.noap}}</label>
+            <label class="label-result">Juan Jaime Perales Ruíz</label>
         </div>
     </div>
 </div>
@@ -71,11 +71,11 @@
     <div class="fila1 row">
         <div class="col-sm-2 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.numSeguridadSoc" | transloco }}</label>
-            <label class="label-result">925687458002 - Titular</label>
+            <label class="label-result">{{personalData.acre?.nuss }} - {{personalData.acre?.tibe }}</label>
         </div>
         <div class="col-sm-2 align-column">
-            <label class="label-negrita">{{ "tabDatosContacto.centroAsignado" | transloco }} <i class="fa-solid fa-circle-info"  data-mdb-toggle="tooltip" title="Hi! I'm tooltip" ></i></label>
-            <label class="label-result">CAP de Buñol</label>
+            <label class="label-negrita">{{ "tabDatosContacto.centroAsignado" | transloco }} <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" ></i></label>
+            <label class="label-result">{{personalData.asig?.cen?.nomb}}</label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.profesionalTrabajoSoc" | transloco }}</label>
@@ -83,7 +83,7 @@
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoCentroSalud" | transloco }}</label>
-            <label class="label-result">6156 002 001</label>
+            <label class="label-result">616 002 231</label>
         </div>
     </div>
 </div>

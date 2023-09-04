@@ -1,5 +1,10 @@
-.accordion-flush .accordion-item:last-child {
+.accordion-item:last-child {
   border-bottom: 1px solid #dee2e6;
+}
+
+.accordion-body {
+  color: #495057;
+  font-size: 12px;
 }
 
 .accordion-button {
@@ -7,6 +12,8 @@
   color: #565353;
   padding: 8px;
 }
+
+
 
 .cuadrado-on {
   width: 10px;
