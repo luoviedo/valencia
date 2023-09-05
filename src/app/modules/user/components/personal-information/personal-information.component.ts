@@ -9,19 +9,21 @@ import { PersonalData } from '../../interfaces/personal-data.interface';
 export class PersonalInformationComponent implements OnInit {
   constructor(private dataUserService: DataUserService) {}
   public personalData!: PersonalData;
-  public title: string = 'Médico especialziado en cosas'
-  public subtitle: string = '4589 - quien sabae qué más'
+  public titleMed: string = 'Profesional de medicina';
+  public titleEnf: string = 'Profesional de enfermería';
   ngOnInit(): void {
     this.getDataUser();
   }
 
   getDataUser() {
-    this.dataUserService.user.subscribe((data) => this.personalData = data);
+    this.dataUserService.user.subscribe((data) => (this.personalData = data));
   }
 
   getTooltipText() {
-    return `${this.title} 
-    ${this.subtitle}`
-
-}
+    return `${this.titleMed} 
+    ${this.personalData.asig?.pro?.nif}  -  ${this.personalData.asig?.pro?.noap}
+    
+    ${this.titleEnf} 
+    ${this.personalData.asig?.enf?.nif}  -  ${this.personalData.asig?.enf?.noap}`;
+  }
 }
