@@ -13,7 +13,7 @@ import { SocialHistoryComponent } from './components/social-history/social-histo
 import { FirstDiagnosticLayerComponent } from './components/first-diagnostic-layer/first-diagnostic-layer.component';
 import { NecessityComponent } from './components/necessity/necessity.component';
 import { DataUserService } from './services/storage/data-user.service';
-
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -33,6 +33,7 @@ import { DataUserService } from './services/storage/data-user.service';
     FormsModule,
     ReactiveFormsModule,
     TranslocoModule,
+    MatDialogModule
   ],
   providers: [ToastrService,DataUserService]
 })
