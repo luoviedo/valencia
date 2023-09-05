@@ -74,11 +74,8 @@
             <label class="label-result">{{personalData.acre?.nuss }} - {{personalData.acre?.tibe }}</label>
         </div>
         <div class="col-sm-2 align-column">
-            <label class="label-negrita">{{ "tabDatosContacto.centroAsignado" | transloco }} <i class="fa-solid fa-circle-info" mat-raised-button #tooltip="matTooltip"
-                matTooltip="Info about the action"
-                matTooltipPosition="above"
-                matTooltipHideDelay="100000"
-                aria-label="Button that displays a tooltip that hides when scrolled out of the container" ></i></label>
+            <label class="label-negrita">{{ "tabDatosContacto.centroAsignado" | transloco }} <i class="fa-solid fa-circle-info"[matTooltip]="getTooltipText()"
+                matTooltipPosition="above"></i></label>
             <label class="label-result">{{personalData.asig?.cen?.nomb}}</label>
         </div>
         <div class="col-sm-3 align-column">
