@@ -80,18 +80,6 @@
                 matTooltipHideDelay="100000"
                 aria-label="Button that displays a tooltip that hides when scrolled out of the container" ></i></label>
             <label class="label-result">{{personalData.asig?.cen?.nomb}}</label>
-
-            <button mat-icon-button [matTooltip]="tooltipContent">
-                
-            </button>
-              
-              <ng-template #tooltipContent>
-                <div>
-                  <strong>Título:</strong> Mi Título<br>
-                  <em>Subtítulo:</em> Mi Subtítulo
-                </div>
-              </ng-template>
-
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.profesionalTrabajoSoc" | transloco }}</label>
