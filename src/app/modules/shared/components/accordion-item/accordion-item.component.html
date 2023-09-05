@@ -10,7 +10,7 @@
             <span *ngIf="isEstado" class="estados estado-abierto"> Abierto </span>
         </button>
     </h2>
-    <div id={{idDiv}} class="accordion-collapse collapse"
+    <div [id]="idDiv" class="accordion-collapse collapse"
         aria-labelledby="flush-headingOne"
         data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">

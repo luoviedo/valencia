@@ -14,6 +14,7 @@ import { FirstDiagnosticLayerComponent } from './components/first-diagnostic-lay
 import { NecessityComponent } from './components/necessity/necessity.component';
 import { DataUserService } from './services/storage/data-user.service';
 import {MatDialogModule} from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     FormsModule,
     ReactiveFormsModule,
     TranslocoModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTooltipModule,
   ],
   providers: [ToastrService,DataUserService]
 })
