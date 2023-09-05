@@ -2,7 +2,6 @@
     <div class="contenedor-info col d-flex">
         <div class="d-flex justify-content-around align-items-center" [ngClass]="{'contenedor-info-logo-h': result.iden?.sexo === 'H','contenedor-info-logo-m': result.iden?.sexo === 'M' }">
             <label>{{iniciales}}</label>
-            <!--<i class="fa-solid fa-house"></i>-->
         </div>
         <div>            
             <label class="contenedor-info-name">{{result.iden?.nomb }} {{result.iden?.ape1}} {{result.iden?.ape2}} ({{result.iden?.sexo}}, {{result.iden?.fena}})</label>
