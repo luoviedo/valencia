@@ -4,13 +4,13 @@
     
     <div class="d-flex">
         <label class="label-izq">{{ "tabDatosContacto.datosContacto" | transloco }}</label>
-        <label class="label-der"> <em>{{ "tabDatosContacto.fechaActualizacion" | transloco }}: {{personalData.iden?.fact}}</em></label>
+        <label class="label-der"> <em>{{ "tabDatosContacto.fechaActualizacion" | transloco }}: {{personalData.return?.iden?.fact | date:'yyyy-MM-dd'}}</em></label>
     </div>
     <div class="fila1 row">
         <div class="col-sm-4 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.direccion" | transloco }}</label>
-            <label class="label-result">{{personalData.loca?.dirRes?.cal?.calCod?.tiv}} {{personalData.loca?.dirRes?.cal?.calCod?.nomb}}, {{personalData.loca?.dirRes?.espe?.nume}}</label>
-            <label class="label-result">{{personalData.loca?.dirRes?.copo}} {{personalData.loca?.dirRes?.loc?.nomb}}, {{personalData.loca?.dirRes?.prv?.nomb}}</label>
+            <label class="label-result">{{personalData.return?.loca?.dirRes?.cal?.calCod?.tiv}} {{personalData.return?.loca?.dirRes?.cal?.calCod?.nomb}}, {{personalData.return?.loca?.dirRes?.espe?.nume}}</label>
+            <label class="label-result">{{personalData.return?.loca?.dirRes?.copo}} {{personalData.return?.loca?.dirRes?.loc?.nomb}}, {{personalData.return?.loca?.dirRes?.prv?.nomb}}</label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoMovilContacto" | transloco }}</label>
@@ -18,7 +18,7 @@
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoFijo" | transloco }}</label>
-            <label class="label-result">{{personalData.loca?.tele}}</label>
+            <label class="label-result">{{personalData.return?.loca?.tele}}</label>
         </div>
         <div class="col-sm-2 text-end">
             <button class="btn-editar-sip"><i class="fa-solid fa-pen"></i>{{ "tabDatosContacto.btnEditarSIP" | transloco }}</button>
@@ -30,7 +30,7 @@
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoAlternativo" | transloco }}</label>
-            <label class="label-result">{{personalData.loca?.teco}}</label>
+            <label class="label-result">{{personalData.return?.loca?.teco}}</label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoMovilExt" | transloco }}</label>
@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col align-column">
             <label class="label-negrita">Email</label>
-            <label class="label-result">{{personalData.loca?.correo}}</label>
+            <label class="label-result">{{personalData.return?.loca?.correo}}</label>
         </div>
     </div>
 </div>
@@ -71,12 +71,12 @@
     <div class="fila1 row">
         <div class="col-sm-2 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.numSeguridadSoc" | transloco }}</label>
-            <label class="label-result">{{personalData.acre?.nuss }} - {{personalData.acre?.tibe }}</label>
+            <label class="label-result">{{personalData.return?.acre?.nuss }} - {{personalData.return?.acre?.tibe }}</label>
         </div>
         <div class="col-sm-2 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.centroAsignado" | transloco }} <i class="fa-solid fa-circle-info"[matTooltip]="getTooltipText()"
-                matTooltipPosition="above"></i></label>
-            <label class="label-result">{{personalData.asig?.cen?.nomb}}</label>
+                matTooltipPosition="above" matTooltipClass="custom-tooltip"></i></label>
+            <label class="label-result">{{personalData.return?.asig?.cen?.nomb}}</label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.profesionalTrabajoSoc" | transloco }}</label>

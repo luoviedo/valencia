@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataUserService } from '../../services/storage/data-user.service';
 import { PersonalData } from '../../interfaces/personal-data.interface';
+import { Return } from '../../interfaces/return.interface';
 @Component({
   selector: 'app-personal-information',
   templateUrl: './personal-information.component.html',
@@ -8,7 +9,7 @@ import { PersonalData } from '../../interfaces/personal-data.interface';
 })
 export class PersonalInformationComponent implements OnInit {
   constructor(private dataUserService: DataUserService) {}
-  public personalData!: PersonalData;
+  public personalData!: Return;
   public titleMed: string = 'Profesional de medicina';
   public titleEnf: string = 'Profesional de enfermería';
   ngOnInit(): void {
@@ -21,9 +22,9 @@ export class PersonalInformationComponent implements OnInit {
 
   getTooltipText() {
     return `${this.titleMed} 
-    ${this.personalData.asig?.pro?.nif}  -  ${this.personalData.asig?.pro?.noap}
+    ${this.personalData.return?.asig?.pro?.nif}  -  ${this.personalData.return?.asig?.pro?.noap}
     
     ${this.titleEnf} 
-    ${this.personalData.asig?.enf?.nif}  -  ${this.personalData.asig?.enf?.noap}`;
+    ${this.personalData.return?.asig?.enf?.nif}  -  ${this.personalData.return?.asig?.enf?.noap}`;
   }
 }

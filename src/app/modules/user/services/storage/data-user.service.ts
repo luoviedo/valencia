@@ -1,14 +1,15 @@
 import { Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
 import { PersonalData } from '../../interfaces/personal-data.interface';
+import { Return } from '../../interfaces/return.interface';
 
 @Injectable()
 export class DataUserService{
   constructor(){}
-  private user$ = new BehaviorSubject<PersonalData>({});
+  private user$ = new BehaviorSubject<Return>({});
   user = this.user$.asObservable();
   
-  setData(dataUser:PersonalData){
+  setData(dataUser:Return){
     this.user$.next(dataUser); 
   }
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { PersonalData } from '../../interfaces/personal-data.interface';
 import { PersonalDataService } from '../../services/personal-data/personal-data.service';
 import { DataUserService } from '../../services/storage/data-user.service';
+import { Return } from '../../interfaces/return.interface';
 
 @Component({
   selector: 'app-see-user',
@@ -10,18 +11,22 @@ import { DataUserService } from '../../services/storage/data-user.service';
 })
 export class SeeUserComponent {
   constructor(private personalDataService: PersonalDataService, private dataUserService: DataUserService) {}
-  public result: PersonalData = {};
+  public result: Return = {};
   public iniciales: string = '';
 
   ngOnInit(): void {
-    this.personalDataService.getPersonalData().subscribe((resp:PersonalData) => {
+    this.personalDataService.getPersonalData().subscribe((resp:Return) => {
       this.result = resp;
-      this.dataUserService.setData(this.result);
-      if (this.result.iden?.ape1 && this.result.iden?.nomb) {
-        this.iniciales =
-          this.result.iden?.nomb.substring(0, 1) +
-          this.result.iden?.ape1.substring(0, 1);
+      console.log(resp);
+      if(this.result.return?.error == null){
+        this.dataUserService.setData(this.result);
+        if (this.result.return?.iden?.ape1 && this.result.return?.iden?.nomb) {
+          this.iniciales =
+            this.result.return?.iden?.nomb.substring(0, 1) +
+            this.result.return?.iden?.ape1.substring(0, 1);
+        }
       }
+      
     });
   }
 }

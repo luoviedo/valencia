@@ -4,6 +4,7 @@ import { Iden } from './iden.interface';
 import { Loca } from './loca.interface';
 
 export interface PersonalData {
+  error?: string;
   iden?: Iden;
   loca?: Loca;
   acre?: Acre;
