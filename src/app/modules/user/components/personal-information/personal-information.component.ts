@@ -9,8 +9,8 @@ import { Return } from '../../interfaces/return.interface';
 export class PersonalInformationComponent implements OnInit {
   constructor(private dataUserService: DataUserService) {}
   public personalData!: Return;
-  public titleMed: string = 'Profesional de medicina';
-  public titleEnf: string = 'Profesional de enfermería';
+  public titleMed = 'Profesional de medicina';
+  public titleEnf = 'Profesional de enfermería';
   ngOnInit(): void {
     this.getDataUser();
   }

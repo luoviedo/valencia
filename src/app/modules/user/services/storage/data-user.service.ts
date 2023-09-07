@@ -4,7 +4,6 @@ import { Return } from '../../interfaces/return.interface';
 
 @Injectable()
 export class DataUserService{
-  constructor(){}
   private user$ = new BehaviorSubject<Return>({});
   user = this.user$.asObservable();
   

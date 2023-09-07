@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { PersonalDataService } from '../../services/personal-data/personal-data.service';
 import { DataUserService } from '../../services/storage/data-user.service';
@@ -9,7 +9,7 @@ import { Return } from '../../interfaces/return.interface';
   templateUrl: './search-sip.component.html',
   styleUrls: ['./search-sip.component.scss'],
 })
-export class SearchSipComponent {
+export class SearchSipComponent implements OnInit{
   constructor(
     private router: Router,
     private personalDataService: PersonalDataService,

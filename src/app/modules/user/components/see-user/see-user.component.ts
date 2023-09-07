@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataUserService } from '../../services/storage/data-user.service';
 import { Return } from '../../interfaces/return.interface';
 
@@ -7,11 +7,11 @@ import { Return } from '../../interfaces/return.interface';
   templateUrl: './see-user.component.html',
   styleUrls: ['./see-user.component.scss'],
 })
-export class SeeUserComponent {
+export class SeeUserComponent implements OnInit{
   constructor(private dataUserService: DataUserService) {}
   public personalData!: Return;
   public result: Return = {};
-  public iniciales: string = '';
+  public iniciales = '';
   public data: any;
   ngOnInit(): void {
     this.setDataUser();

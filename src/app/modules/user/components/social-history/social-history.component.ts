@@ -12,11 +12,11 @@ export class SocialHistoryComponent {
   constructor(public dialog: MatDialog) {}
 
   public onAdd() {
-    const dialogRef = this.dialog.open(FirstDiagnosticLayerComponent, {
+    this.dialog.open(FirstDiagnosticLayerComponent, {
       width: '90%', // Set width to 60%  of the window's total width
       //height: '90%', // Set height to 50% of the window's total height
-      position: {right},
-      
+      position: { right },
+
       panelClass: 'full-screen-modal',
     });
   }
