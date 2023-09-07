@@ -4,25 +4,24 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
 
-  > .contenedor-info {
+  >.contenedor-info {
     margin: 15px;
     padding-left: 34px;
 
-    > .contenedor-info-logo-h {
+    >.contenedor-info-logo-h {
       align-self: center;
       height: 60px;
       width: 60px;
       border-radius: 50%;
       display: inline-block;
 
-      background: linear-gradient(
-        to right,
-        rgb(13 110 253 / 30%) 0%,
-        rgb(13 110 253 / 30%) 50%,
-        rgb(13 110 253 / 15%) 50%,
-        rgb(13 110 253 / 15%) 100%
-      );
-      > label {
+      background: linear-gradient(to right,
+          rgb(13 110 253 / 30%) 0%,
+          rgb(13 110 253 / 30%) 50%,
+          rgb(13 110 253 / 15%) 50%,
+          rgb(13 110 253 / 15%) 100%);
+
+      >label {
         text-align: center;
         font-size: 24px;
         font-weight: bold;
@@ -31,21 +30,20 @@
       }
     }
 
-    > .contenedor-info-logo-m {
+    >.contenedor-info-logo-m {
       align-self: center;
       height: 60px;
       width: 60px;
       border-radius: 50%;
       display: inline-block;
 
-      background: linear-gradient(
-        to right,
-        rgb(245 145 225 / 40%) 0%,
-        rgb(245 145 225 / 40%) 50%,
-        rgb(245 145 225 / 20%) 50%,
-        rgb(245 145 225 / 20%) 100%
-      );
-      > label {
+      background: linear-gradient(to right,
+          rgb(245 145 225 / 40%) 0%,
+          rgb(245 145 225 / 40%) 50%,
+          rgb(245 145 225 / 20%) 50%,
+          rgb(245 145 225 / 20%) 100%);
+
+      >label {
         text-align: center;
         font-size: 24px;
         font-weight: bold;
@@ -57,7 +55,8 @@
     div {
       letter-spacing: 0px;
       color: #333333;
-      > .contenedor-info-name {
+
+      >.contenedor-info-name {
         font-size: 16px;
         font-weight: bold;
         padding: 0 12px;
@@ -65,6 +64,7 @@
 
       div {
         padding-left: 4px;
+
         label {
           padding: 0 8px;
           font-size: 13px;
@@ -77,9 +77,10 @@
     }
   }
 
-  > .contenedor-notificacion {
+  >.contenedor-notificacion {
     text-align: -webkit-right;
-    > div {
+
+    >div {
       width: 70%;
       margin: 8px;
       background: #edecec 0% 0% no-repeat padding-box;

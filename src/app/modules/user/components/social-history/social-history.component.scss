@@ -1,12 +1,16 @@
 $primary-color: #a91f34;
 
-.header-hs{
+.header-hs {
   padding: 10px 36px 0 36px;
-  >label{
-    color: #333333; font-size: 10px;
+
+  >label {
+    color: #333333;
+    font-size: 10px;
   }
-  >p{
-    color: #333333; font-size: 12px;
+
+  >p {
+    color: #333333;
+    font-size: 12px;
   }
 }
 
@@ -23,6 +27,7 @@ $primary-color: #a91f34;
 .panel-historia {
   padding-left: 40px;
   padding-right: 30px;
+
   >.panel-historia-cabecera {
     border-bottom: 1px solid #cfcfcf;
   }
@@ -44,6 +49,7 @@ $primary-color: #a91f34;
   border: 1px solid $primary-color;
   color: $primary-color;
   border-radius: 3px;
+
   i:hover {
     color: $primary-color;
   }

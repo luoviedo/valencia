@@ -5,7 +5,8 @@ $primary-color: #a91f34;
   background: #f1f1f1 0% 0% no-repeat padding-box;
   opacity: 1;
   padding: 0 20px 0 48px;
-  > label {
+
+  >label {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0px;
@@ -24,6 +25,7 @@ $primary-color: #a91f34;
   height: 25px;
   border-radius: 30px;
   margin-left: 20px;
+
   &.estado-grave {
     color: #de3636;
     background: #f6dada 0% 0% no-repeat padding-box;
@@ -55,7 +57,7 @@ $primary-color: #a91f34;
   align-items: center;
 
   background: #e1e1e1 0% 0% no-repeat padding-box;
-  
+
 }
 
 .nav-pills .nav-link.active {
@@ -68,7 +70,7 @@ $primary-color: #a91f34;
   font-weight: 600;
   color: #333333;
   padding: 4px 11px 4px 11px;
-  
+
 }
 
 .nav-link {

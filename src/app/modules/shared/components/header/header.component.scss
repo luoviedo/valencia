@@ -8,12 +8,14 @@ $primary-color: #a91f34;
 .nav-item {
   border-left: 1px solid rgba(255, 255, 255, 0.35);
   padding: 0px 18px 0px 18px;
+
   //opacity: 0.35;
-  > .title {
+  >.title {
     font-size: 15px;
     font-weight: 500;
   }
-  > .subtitle {
+
+  >.subtitle {
     font-size: 12px;
     opacity: 0.88;
   }
@@ -24,19 +26,22 @@ img {
 }
 
 div {
-  > .name {
+  >.name {
     border-right: 1px solid rgba(255, 255, 255, 0.35);
     padding: 0px 18px 0px 18px;
   }
-  > .subtitle-name {
+
+  >.subtitle-name {
     font-size: 13px;
     font-weight: 500;
   }
-  > .subtitle-name-rol {
+
+  >.subtitle-name-rol {
     font-size: 12px;
     opacity: 0.88;
   }
-  > i {
+
+  >i {
     padding: 0px 10px 0px 18px;
     align-self: center;
   }
@@ -47,12 +52,13 @@ div {
     opacity: 0.88;
     font-size: 11px;
     padding-left: 23px;
-    >label{
+
+    >label {
       cursor: pointer;
+
       &.active {
         text-decoration: underline;
       }
     }
   }
 }
-

@@ -9,7 +9,8 @@ $primary-color: #a91f34;
 
   .contenedor-notificacion {
     text-align: -webkit-right;
-    > div {
+
+    >div {
       width: 70%;
       margin: 8px;
       background: #edecec 0% 0% no-repeat padding-box;
@@ -36,6 +37,9 @@ input {
 
   margin-right: 60px;
   outline: none;
+
+  font-size: 13px;
+  color: #333333;
 }
 
 i {
@@ -55,6 +59,12 @@ i {
   cursor: pointer;
 }
 
+i:hover {
+  background: $primary-color 0% 0% no-repeat padding-box;
+  border: 1px solid $primary-color;
+  border-radius: 2px;
+}
+
 .btn-search-sip {
   width: 166px;
   height: 33px;
@@ -69,5 +79,5 @@ i {
 .btn-search-sip:hover {
   border: 1px solid $primary-color;
   color: $primary-color;
-  border-radius: 3px;
+  border-radius: 0px 3px 3px 0px;
 }

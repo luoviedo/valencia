@@ -1,6 +1,7 @@
 .card-element {
   line-height: 35px;
-  > .dot {
+
+  >.dot {
     height: 10px;
     width: 10px;
     border-radius: 50%;

@@ -3,7 +3,7 @@ $primary-color: #a91f34;
 .contenedor {
   padding: 15px 40px 0 29px;
 
-  > .d-flex {
+  >.d-flex {
     justify-content: space-between;
     border-bottom: 1px solid #cfcfcf;
 
@@ -19,9 +19,10 @@ $primary-color: #a91f34;
     }
   }
 
-  > .fila1 {
+  >.fila1 {
     padding-top: 10px;
     font-size: 12px;
+
     &.spacing-table {
       padding: 15px 11px 0 14px;
     }
@@ -59,10 +60,12 @@ $primary-color: #a91f34;
   width: 78px;
   height: 33px;
   border-radius: 20px;
+
   &.estado-abierto {
     color: #2d8533;
     background: #e1f9e9 0% 0% no-repeat padding-box;
   }
+
   &.estado-cerrado {
     color: #000000;
     background: #f1f0f0 0% 0% no-repeat padding-box;
@@ -82,6 +85,7 @@ button:hover {
   border: 1px solid $primary-color;
   color: $primary-color;
   border-radius: 3px;
+
   i:hover {
     color: $primary-color;
   }
@@ -90,7 +94,7 @@ button:hover {
 .btn-editar-sip {
   height: 33px;
   width: 136px;
-  }
+}
 
 .btn-unidad-conv {
   height: 30px;
@@ -98,7 +102,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-table > :not(caption) > * > * {
+table> :not(caption)>*>* {
   padding: 0.3rem 0.5rem;
 }
 
@@ -109,7 +113,8 @@ thead tr {
 tbody tr {
   font-size: 13px;
   color: #333333;
-  > td em {
+
+  >td em {
     font-size: 12px;
   }
 }

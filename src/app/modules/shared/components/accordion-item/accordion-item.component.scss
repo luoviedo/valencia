@@ -52,10 +52,12 @@
   height: 25px;
   border-radius: 30px;
   margin-left: 20px;
+
   &.estado-abierto {
     color: #2d8533;
     background: #e1f9e9 0% 0% no-repeat padding-box;
   }
+
   &.estado-cerrado {
     color: #000000;
     background: #f1f0f0 0% 0% no-repeat padding-box;
