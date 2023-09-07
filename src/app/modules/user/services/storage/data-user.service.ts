@@ -1,6 +1,6 @@
 import { Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
-import { Return } from '../../interfaces/return.interface';
+import type { Return } from '../../interfaces/return.interface';
 
 @Injectable()
 export class DataUserService{

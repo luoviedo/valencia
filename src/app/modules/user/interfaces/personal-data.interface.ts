@@ -1,7 +1,7 @@
-import { Acre } from './acre.interface';
-import { Asig } from './asig.interface';
-import { Iden } from './iden.interface';
-import { Loca } from './loca.interface';
+import type { Acre } from './acre.interface';
+import type { Asig } from './asig.interface';
+import type { Iden } from './iden.interface';
+import type { Loca } from './loca.interface';
 
 export interface PersonalData {
   error?: string;

@@ -1,7 +1,7 @@
-import { Cal } from "./cal.interface";
-import { Espe } from "./espe.interface";
-import { Loc } from "./loc.interface";
-import { Prv } from "./prv.interface";
+import type { Cal } from "./cal.interface";
+import type { Espe } from "./espe.interface";
+import type { Loc } from "./loc.interface";
+import type { Prv } from "./prv.interface";
 
 export interface DirRes {
   prv?: Prv;

@@ -1,6 +1,6 @@
-import { Cen } from "./cen.interface";
-import { Enf } from "./enf.interface";
-import { Pro } from "./pro.interface";
+import type { Cen } from "./cen.interface";
+import type { Enf } from "./enf.interface";
+import type { Pro } from "./pro.interface";
 
 export interface Asig {
   cen?: Cen;

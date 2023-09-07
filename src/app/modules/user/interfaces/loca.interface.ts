@@ -1,4 +1,4 @@
-import { DirRes } from "./dirRes.interface";
+import type { DirRes } from "./dirRes.interface";
 
 export interface Loca {
   dirRes?: DirRes;

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import type { OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DataUserService } from '../../services/storage/data-user.service';
-import { Return } from '../../interfaces/return.interface';
+import type { Return } from '../../interfaces/return.interface';
 
 @Component({
   selector: 'app-see-user',

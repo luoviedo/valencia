@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import type { OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { PersonalDataService } from '../../services/personal-data/personal-data.service';
 import { DataUserService } from '../../services/storage/data-user.service';
-import { Return } from '../../interfaces/return.interface';
+import type { Return } from '../../interfaces/return.interface';
 
 @Component({
   selector: 'app-search-sip',
@@ -22,7 +23,7 @@ export class SearchSipComponent implements OnInit{
     console.log(this.sip);
   }
 
-  public test(value: any) {
+  public getSip(value: any) {
     console.log(value.target.value);
     this.sip = value.target.value;
   }

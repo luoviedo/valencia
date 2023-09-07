@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
+import type {
+  Translation,
+  TranslocoLoader} from '@ngneat/transloco';
 import {
   TRANSLOCO_LOADER,
-  Translation,
-  TranslocoLoader,
   TRANSLOCO_CONFIG,
   translocoConfig,
   TranslocoModule
