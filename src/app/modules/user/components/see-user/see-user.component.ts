@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { PersonalData } from '../../interfaces/personal-data.interface';
-import { PersonalDataService } from '../../services/personal-data/personal-data.service';
 import { DataUserService } from '../../services/storage/data-user.service';
 import { Return } from '../../interfaces/return.interface';
 

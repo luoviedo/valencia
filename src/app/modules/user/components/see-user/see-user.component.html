@@ -21,11 +21,11 @@
 <ul class="nav nav-pills" id="pills-tab" role="tablist">
     <li style="margin: 0 15px;
     width: 130px;"  class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-social-tab" data-bs-toggle="pill" data-bs-target="#pills-social" type="button" role="tab" aria-controls="pills-social" aria-selected="true">{{"tabs.historiaSocial" | transloco}}</button>
+        <button class="nav-link" id="pills-social-tab" data-bs-toggle="pill" data-bs-target="#pills-social" type="button" role="tab" aria-controls="pills-social" aria-selected="true">{{"tabs.historiaSocial" | transloco}}</button>
     </li>
     <li style="margin: 0 10px;
     width: 139px;" class="nav-item" role="presentation">
-      <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{"tabs.datosPersonales" | transloco}}</button>
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{"tabs.datosPersonales" | transloco}}</button>
     </li>
     <!--<li style="margin: 0 10px;
     width: 130px;" class="nav-item" role="presentation">
@@ -40,10 +40,10 @@
     </li> -->
   </ul>
   <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane show active" id="pills-social" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-pane " id="pills-social" role="tabpanel" aria-labelledby="pills-home-tab">
         <app-social-history></app-social-history>
     </div>
-    <div class="tab-pane" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-pane show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <app-personal-information></app-personal-information>
     </div>
      <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">

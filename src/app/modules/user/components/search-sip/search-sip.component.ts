@@ -28,8 +28,6 @@ export class SearchSipComponent {
   }
 
   public onSearch() {
-    //
-
     this.personalDataService
       .getPersonalData(this.sip)
       .subscribe((resp: Return) => {
