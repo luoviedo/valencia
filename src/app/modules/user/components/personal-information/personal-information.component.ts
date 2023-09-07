@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DataUserService } from '../../services/storage/data-user.service';
-import { PersonalData } from '../../interfaces/personal-data.interface';
 import { Return } from '../../interfaces/return.interface';
 @Component({
   selector: 'app-personal-information',
