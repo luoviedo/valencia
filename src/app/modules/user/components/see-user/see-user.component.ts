@@ -10,23 +10,24 @@ import { Return } from '../../interfaces/return.interface';
   styleUrls: ['./see-user.component.scss'],
 })
 export class SeeUserComponent {
-  constructor(private personalDataService: PersonalDataService, private dataUserService: DataUserService) {}
+  constructor(private dataUserService: DataUserService) {}
+  public personalData!: Return;
   public result: Return = {};
   public iniciales: string = '';
-
+  public data: any;
   ngOnInit(): void {
-    this.personalDataService.getPersonalData().subscribe((resp:Return) => {
-      this.result = resp;
-      console.log(resp);
-      if(this.result.return?.error == null){
-        this.dataUserService.setData(this.result);
-        if (this.result.return?.iden?.ape1 && this.result.return?.iden?.nomb) {
-          this.iniciales =
-            this.result.return?.iden?.nomb.substring(0, 1) +
-            this.result.return?.iden?.ape1.substring(0, 1);
-        }
-      }
-      
-    });
+    this.setDataUser();
+  }
+
+  public setDataUser() {
+    this.data = sessionStorage.getItem('personalData');
+    this.result = JSON.parse(this.data);
+    if (this.result.return?.iden?.ape1 && this.result.return?.iden?.nomb) {
+      this.iniciales =
+        this.result.return?.iden?.nomb.substring(0, 1) +
+        this.result.return?.iden?.ape1.substring(0, 1);
+    }
+    console.log('data: ', this.result);
+    this.dataUserService.setData(this.result);
   }
 }

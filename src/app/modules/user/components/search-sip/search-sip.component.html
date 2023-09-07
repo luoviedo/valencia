@@ -1,7 +1,10 @@
 <div class="contenedor d-flex align-items-center">
-    <div class="search">
-        <input type="text">
+    <div class="search col-6">
+        <input type="text" [(ngModel)]="sip" (input)="test($event)">
         <i (click)="onSearch()" class="fa-solid fa-magnifying-glass"></i>
-        <button class="btn-search-sip">{{"searchSip"|transloco}}</button>
+        <button class="btn-search-sip" >{{"searchSip"|transloco}}</button>
+    </div>
+    <div class="contenedor-notificacion col-6">
+        <div class="d-flex align-items-center">{{result.return?.error}}</div>
     </div>
 </div>

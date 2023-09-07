@@ -1,6 +1,5 @@
 import { Injectable} from '@angular/core';
 import {BehaviorSubject} from 'rxjs';
-import { PersonalData } from '../../interfaces/personal-data.interface';
 import { Return } from '../../interfaces/return.interface';
 
 @Injectable()
