@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- tag::pom-angular[] -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <!-- tag::pom-angular-parent[] -->
+  <parent>
+    <groupId>es.gva.dgtic</groupId>
+    <artifactId>super-pom</artifactId>
+    <version>03.01.01</version>
+  </parent>
+  <!-- end::pom-angular-parent[] -->
+  <!-- tag::pom-angular-info[] -->
+  <groupId>es.gva.sihsu</groupId>
+  <artifactId>sihsu-frontend</artifactId>
+  <version>03.01.01</version>
+  <packaging>pom</packaging>
+  <name>SIHSU-FRONTEND</name>
+  <description>Componente Frontend de SIHSU (Backend)</description>
+  <properties>
+    <application.name>sihsu-frontend</application.name>
+    <component.name>sihsu-frontend-angular</component.name>
+    <ENV>development</ENV>
+	<nodeVersion>v18.10.0</nodeVersion>
+	<npmVersion>8.19.2</npmVersion>
+  </properties>
+  <!-- end::pom-angular-info[] -->
+  <build>
+    <plugins>
+      <!-- Generación de recursos -->
+      <!-- tag::pom-angular-frontend-plugin[] -->
+      <!-- <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
+      </plugin> -->
+      <plugin>
+        <groupId>com.github.eirslett</groupId>
+        <artifactId>frontend-maven-plugin</artifactId>
+        <executions>
+          <!-- Instalación de versiones concretas de NodeJS y npm -->
+          <!-- tag::frontend-plugin-install[] -->
+          <execution>
+            <id>install node and npm</id>
+            <goals>
+              <goal>install-node-and-npm</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <nodeVersion>${nodeVersion}</nodeVersion>
+              <npmVersion>${npmVersion}</npmVersion>
+              <testFailureIgnore>true</testFailureIgnore>
+            </configuration>
+          </execution>
+          <!-- end::frontend-plugin-install[] -->
+          <!-- Ejecución de instrucciones npm -->
+          <!-- tag::frontend-plugin-run[] -->
+          <execution>
+            <id>npm run build</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <arguments>run build:tar_${ENV}</arguments>
+            </configuration>
+          </execution>
+          <!-- end::frontend-plugin-run[] -->
+        </executions>
+      </plugin>
+      <!-- end::pom-angular-frontend-plugin[] -->
+      <!-- Empaquetado de los recursos web estáticos -->
+      <!-- tag::pom-angular-antrun-plugin[] -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>prepare_static_resources_package_angular</id>
+            <configuration>
+              <!-- Se activa la ejecución para proyectos Angular -->
+              <skip>false</skip>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- end::pom-angular-antrun-plugin[] -->
+    </plugins>
+  </build>
+</project>
+<!-- end::pom-angular[] -->

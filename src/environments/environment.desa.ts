@@ -3,11 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  name: 'Local',
+  name: 'Desarrollo',
   production: false,
   isDebugMode: true,
 
-  flag: false, // true: para el json false: api back
+  flag: true, // true: para el json false: api back
   apis: {
     datosPersonales: 'http://localhost:8080/getuser/',
   },

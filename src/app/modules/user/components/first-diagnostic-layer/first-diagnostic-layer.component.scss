@@ -14,6 +14,15 @@ $primary-color: #a91f34;
   }
 }
 
+.nav-item {
+  padding-left: 20px;
+}
+
+.contexto {
+  padding-right: 20px;
+  border-right: 1px solid #70707061;
+}
+
 .estados {
   display: flex;
   justify-content: center;
@@ -56,7 +65,7 @@ $primary-color: #a91f34;
   text-align: -webkit-center;
   align-items: center;
 
-  background: #e1e1e1 0% 0% no-repeat padding-box;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
 
 }
 
@@ -79,3 +88,5 @@ $primary-color: #a91f34;
   color: #333333;
   font-weight: 500;
 }
+
+.mat-dialog-content { max-height: 85vh; }

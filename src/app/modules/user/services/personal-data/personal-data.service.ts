@@ -14,7 +14,7 @@ export class PersonalDataService {
     if (environment.flag) {
       return this.http.get(`../../../../assets/data/datos-personales.json`);
     } else {
-      return this.http.get(`${environment.apiUrl}getuser/${sip}`);
+      return this.http.get(`${environment.apis.datosPersonales}${sip}`);
     }
   }
 }

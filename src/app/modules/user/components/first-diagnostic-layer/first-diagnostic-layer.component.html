@@ -3,15 +3,20 @@
         SOCIAL A LA DISCAPACIDAD</label>
     <i class="fa-solid fa-xmark" mat-dialog-close></i>
 </div>
-<mat-dialog-content class="mat-typography">
+
 <div class="diagnostico d-flex align-items-center">
+    <div class="nav-item align-column contexto">
+        <label class="title">CONTEXTO VITAL</label>
+        <label class="subtitle">CARENCIA MODERADA</label>
+    </div>
+
     <div>
         <span class="estados estado-grave">
             Dificultad grave
         </span>
     </div>
 
-    <div class="nav-item align-column" style="padding-left: 20px;">
+    <div class="nav-item align-column">
         <label class="title">DIAGNÓSTICO</label>
         <label class="subtitle">D4. PERSONA CON PROBLEMAS GRAVES DE AUTONOMÍA
             PERSONAL.</label>
@@ -31,7 +36,7 @@
       <button class="nav-link" id="pills-pais-tab" data-bs-toggle="pill" data-bs-target="#pills-pais" type="button" role="tab" aria-controls="pills-home" aria-selected="true">PAIS</button>
     </li>
   </ul>
-
+  <mat-dialog-content class="mat-typography" style="padding-top: 0px;">
   <div class="tab-content" id="pills-tabContent">
     <div class="tab-pane show active" id="pills-resumen" role="tabpanel" aria-labelledby="pills-home-tab">
         <app-necessity></app-necessity>
