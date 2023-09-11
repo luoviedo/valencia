@@ -18,7 +18,6 @@ export class SeeUserComponent implements OnInit {
   ngOnInit(): void {
     this.setDataUser();
     this.getTeles();
-    console.log(this.getTooltipText());
   }
 
   public setDataUser() {

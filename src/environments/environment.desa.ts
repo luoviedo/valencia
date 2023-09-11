@@ -7,7 +7,7 @@ export const environment = {
   production: false,
   isDebugMode: true,
 
-  flag: true, // true: para el json false: api back
+  flag: false, // true: para el json false: api back
   apis: {
     datosPersonales: 'http://localhost:8080/getuser/',
   },
