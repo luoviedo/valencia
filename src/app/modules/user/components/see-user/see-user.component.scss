@@ -72,6 +72,7 @@
 
         i {
           padding: 0 12px 0 12px;
+          cursor: pointer;
         }
       }
     }
@@ -115,6 +116,15 @@
   font-weight: 500;
 }
 
-// .nav-item {
-//   padding-right: 20px;
-// }
+::ng-deep .custom-tooltip {
+  .mdc-tooltip__surface {
+    max-width: 350px;
+    padding: 5px;
+    white-space: pre-line;
+    text-align: start !important;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+}

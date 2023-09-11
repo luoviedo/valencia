@@ -4,12 +4,13 @@
             <label>{{iniciales}}</label>
         </div>
         <div>            
-            <label class="contenedor-info-name">{{result.return?.iden?.nomb }} {{result.return?.iden?.ape1}} {{result.return?.iden?.ape2}} ({{result.return?.iden?.sexo}}, {{result.return?.iden?.fena | date:'yyyy-MM-dd'}})</label>
+            <label class="contenedor-info-name">{{result.return?.iden?.nomb }} {{result.return?.iden?.ape1}} {{result.return?.iden?.ape2}} ({{result.return?.iden?.sexo}}, {{result.return?.iden?.fena | date:'dd-MM-yyyy'}})</label>
             <div>
                 <label><strong>SIP </strong>{{result.return?.iden?.nsip }}</label>
                 <label><strong>NIF</strong> {{result.return?.iden?.nif }}</label>
-                <label>616 002 001 / 98 265 265</label>
-                <i class="fa-solid fa-house"></i>
+                <label>{{telMovil}} / {{telFijo}}</label>
+                <i class="fa-solid fa-house"[matTooltip]="getTooltipText()"
+                matTooltipPosition="above" matTooltipClass="custom-tooltip"></i>
             </div>
         </div>
     </div>

@@ -4,7 +4,7 @@
     
     <div class="d-flex">
         <label class="label-izq">{{ "tabDatosContacto.datosContacto" | transloco }}</label>
-        <label class="label-der"> <em>{{ "tabDatosContacto.fechaActualizacion" | transloco }}: {{personalData.return?.iden?.fact | date:'yyyy-MM-dd'}}</em></label>
+        <label class="label-der"> <em>{{ "tabDatosContacto.fechaActualizacion" | transloco }}: {{personalData.return?.iden?.fact | date:'dd-MM-yyyy'}}</em></label>
     </div>
     <div class="fila1 row">
         <div class="col-sm-4 align-column">
@@ -14,11 +14,11 @@
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoMovilContacto" | transloco }}</label>
-            <label class="label-result">616 002 231</label>
+            <label class="label-result">{{telMovil}}</label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoFijo" | transloco }}</label>
-            <label class="label-result">{{personalData.return?.loca?.tele}}</label>
+            <label class="label-result">{{telFijo}}</label>
         </div>
         <div class="col-sm-2 text-end">
             <button class="btn-editar-sip"><i class="fa-solid fa-pen"></i>{{ "tabDatosContacto.btnEditarSIP" | transloco }}</button>
@@ -41,7 +41,7 @@
     <div class="row">
         <div class="col align-column">
             <label class="label-negrita">Email</label>
-            <label class="label-result">{{personalData.return?.loca?.correo}}</label>
+            <label class="label-result"></label>
         </div>
     </div>
 </div>
@@ -54,11 +54,11 @@
     <div class="fila1 row">
         <div class="col-sm-4 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.centroServicioSoc" | transloco }}</label>
-            <label class="label-result">CSS de Buñol</label>
+            <label class="label-result"></label>
         </div>
         <div class="col-sm-4 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.profesionalRef" | transloco }}</label>
-            <label class="label-result">Juan Jaime Perales Ruíz</label>
+            <label class="label-result"></label>
         </div>
     </div>
 </div>
@@ -80,11 +80,11 @@
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.profesionalTrabajoSoc" | transloco }}</label>
-            <label class="label-result">Sonia Ruíz López</label>
+            <label class="label-result"></label>
         </div>
         <div class="col-sm-3 align-column">
             <label class="label-negrita">{{ "tabDatosContacto.telefonoCentroSalud" | transloco }}</label>
-            <label class="label-result">616 002 231</label>
+            <label class="label-result"></label>
         </div>
     </div>
 </div>

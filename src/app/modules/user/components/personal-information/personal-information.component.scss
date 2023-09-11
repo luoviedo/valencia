@@ -3,7 +3,7 @@ $primary-color: #a91f34;
 .contenedor {
   padding: 15px 40px 0 29px;
 
-  >.d-flex {
+  > .d-flex {
     justify-content: space-between;
     border-bottom: 1px solid #cfcfcf;
 
@@ -19,7 +19,7 @@ $primary-color: #a91f34;
     }
   }
 
-  >.fila1 {
+  > .fila1 {
     padding-top: 10px;
     font-size: 12px;
 
@@ -102,7 +102,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-table> :not(caption)>*>* {
+table > :not(caption) > * > * {
   padding: 0.3rem 0.5rem;
 }
 
@@ -114,7 +114,7 @@ tbody tr {
   font-size: 13px;
   color: #333333;
 
-  >td em {
+  > td em {
     font-size: 12px;
   }
 }
@@ -171,14 +171,17 @@ tbody tr {
   border-color: #565353;
 }
 
-::ng-deep .mdc-tooltip__surface {
-  white-space: pre-line;
-  text-align: start !important;
-}
 
-.custom-tooltip {
-  text-align: left;
-  font-size: 12px;
-  letter-spacing: 0px;
-  color: #FFFFFF;
+
+::ng-deep .custom-tooltip {
+  .mdc-tooltip__surface {
+    max-width: 350px;
+    padding: 5px;
+    white-space: pre-line;
+    text-align: start !important;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
 }
