@@ -2,6 +2,8 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { common } from './common';
+
 export const environment = {
   name: 'Desarrollo',
   production: false,
@@ -38,7 +40,7 @@ export const environment = {
     hostDynamic: 'https://sihsu-dsa.gva.es/sihsu',
   },
   locale: {
-    default: 'es',
-    cultures: ['ca', 'es'],
+    default: common.defaultLang,
+    cultures: common.langs,
   },
 };
